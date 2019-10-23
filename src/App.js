@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import Button from '@material-ui/core/Button';
+import Portfolio from './Portfolio';
 
 function App() {
   return (
     <div className="App">
-      <div className="test">App</div>
+      <Portfolio />
     </div>
   );
 }
