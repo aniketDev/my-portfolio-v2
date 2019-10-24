@@ -1,17 +1,47 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Education from './components/Education/Education';
+import Experience from './components/Experience/Experience';
+import Services from './components/Services/Services';
+import Skills from './components/Skills/Skills';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 const Portfolio = () => {
   return (
     <div className="portfolio">
-      Hi there, I am Aniket Mandal. I am a professional front-end web developer with 1+ years of
-      professional experience. After passing my M.Tech I started my job as a Project Coordinator in
-      a company named IUMS Pvt. Ltd. back in Kolkata. There I find my passion for web development.
-      Soon I changed my career and came all the way to Bangalore. Here I started my job as a
-      Front-end Web Developer in a startup named Balihans Software Pvt. Ltd. I started designing and
-      developing the company's own product named Qnabu. As I am the only one responsible for
-      designing and developing front end part of the entire application, I learned a lot of things
-      by myself and became a passionate web developer. I try to learn new things each and every day
-      and I feel a day without learning anything new is a day wasted.
+      <Grid container direction="column">
+        <Grid item xs={12}>
+          <Header />
+        </Grid>
+        <Grid item xs={12}>
+          <Home />
+        </Grid>
+        <Grid item xs={12}>
+          <About />
+        </Grid>
+        <Grid item xs={12}>
+          <Skills />
+        </Grid>
+        <Grid item xs={12}>
+          <Experience />
+        </Grid>
+        <Grid item xs={12}>
+          <Education />
+        </Grid>
+        <Grid item xs={12}>
+          <Services />
+        </Grid>
+        <Grid item xs={12}>
+          <Contact />
+        </Grid>
+        <Grid item xs={12}>
+          <Footer />
+        </Grid>
+      </Grid>
     </div>
   );
 };
