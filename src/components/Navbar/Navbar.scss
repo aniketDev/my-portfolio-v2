@@ -1,0 +1,59 @@
+@import '../../assets/scss/variables';
+
+.navmenu {
+  ul {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    padding: 0;
+    transition: background-image 0.3s ease-in-out;
+
+    li {
+      display: inline-block;
+
+      a {
+        position: relative;
+        text-decoration: none;
+        // color: #fff;
+        background: -webkit-linear-gradient(
+          rgba(255, 255, 255, 0.9) 30%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        transition: color 2.5s ease-in-out, border-bottom 0.18s ease-in-out;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          position: absolute;
+          height: 0.2rem;
+          background: $color-amber;
+          transition: width 350ms ease-out;
+        }
+        &:hover {
+          background: -webkit-linear-gradient(
+            rgba($color-yellow, 1) 30%,
+            rgba($color-yellow, 0.5) 100%
+          );
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-bg {
+  background-image: linear-gradient(to left, $color-nav-dark, $color-nav-light);
+  height: $nav-height;
+}

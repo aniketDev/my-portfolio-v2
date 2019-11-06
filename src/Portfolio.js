@@ -7,7 +7,7 @@ import Education from './components/Education/Education';
 import Experience from './components/Experience/Experience';
 import Services from './components/Services/Services';
 import Skills from './components/Skills/Skills';
-import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
 const Portfolio = () => {
@@ -15,7 +15,7 @@ const Portfolio = () => {
     <div className="portfolio">
       <Grid container direction="column">
         <Grid item xs={12}>
-          <Header />
+          <Navbar />
         </Grid>
         <Grid item xs={12}>
           <Home />
