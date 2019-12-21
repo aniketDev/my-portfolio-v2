@@ -1,4 +1,4 @@
-@import '../../assets/scss/variables';
+@import '../../assets/scss/base';
 
 .home {
   height: calc(100vh - 3rem);
@@ -56,12 +56,23 @@
     }
   }
   .profile-image-container {
+    width: 100%;
+    height: 100%;
+    @include flex-center;
+
     .profile-image {
-      // background-image: url('../../assets/images/profile-image.jpg');
-      width: 20rem;
-      height: 15rem;
-      img {
-      }
+      background: url('../../assets/images/profile-image.jpg');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+
+      // img {
+      //   width: 60%;
+      //   height: 100%;
+      // }
     }
   }
 }

@@ -8,25 +8,25 @@ const Navbar = () => {
       <nav className="navmenu" id="nav">
         <ul>
           <li>
-            <a href="#header">Home</a>
+            <a>Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a>About</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a>Skills</a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <a>Experience</a>
           </li>
           <li>
-            <a href="#education">Education</a>
+            <a>Education</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a>Services</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a>Contact</a>
           </li>
         </ul>
       </nav>
