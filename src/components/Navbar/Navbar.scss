@@ -1,67 +1,41 @@
 @import '../../assets/scss/variables';
 
-.navmenu {
-  display: grid;
-  height: 3rem;
-  ul {
-    list-style: none;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-around;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 0;
-    transition: background-image 0.3s ease-in-out;
+.toolbarContainer {
+  background-image: linear-gradient(to left, $color-nav-dark, $color-nav-light);
+  justify-content: space-between;
+  overflow-x: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 
-    li {
-      display: inline-block;
-      margin: 0 1rem;
-      position: relative;
+  .toolbarLink {
+    flex-shrink: 0;
+    padding: 0 1rem;
+    display: inline-block;
+    position: relative;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 
-      a {
-        text-decoration: none;
-        color: #fff;
-        // background: -webkit-linear-gradient(
-        //   rgba(255, 255, 255, 0.9) 40%,
-        //   rgba(255, 255, 255, 0.2) 100%
-        // );
-        // -webkit-text-fill-color: transparent;
-        // -webkit-background-clip: text;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 500;
-        padding: 0 0.7rem;
-        letter-spacing: 0.2rem;
-        font-size: 1.2rem;
+    span {
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0.2rem;
+        position: absolute;
+        background: $color-amber;
+        transition: width 350ms ease-out;
+      }
+
+      &:hover {
+        color: $color-yellow;
 
         &::after {
-          content: '';
-          display: block;
-          width: 0;
-          position: absolute;
-          height: 0.2rem;
-          background: $color-amber;
-          transition: width 350ms ease-out;
-        }
-
-        &:hover {
-          color: $color-yellow;
-          // background: -webkit-linear-gradient(
-          //   rgba($color-yellow, 1) 50%,
-          //   rgba($color-yellow, 0.7) 100%
-          // );
-          // -webkit-text-fill-color: transparent;
-          // -webkit-background-clip: text;
-
-          &::after {
-            width: 100%;
-          }
+          width: 100%;
         }
       }
     }
   }
-}
-
-.nav-bg {
-  background-image: linear-gradient(to left, $color-nav-dark, $color-nav-light);
-  height: $nav-height;
 }

@@ -1,36 +1,34 @@
 import React from 'react';
 import './Navbar.scss';
-import AppBar from '@material-ui/core/AppBar';
+import { Toolbar, Link } from '@material-ui/core';
+
+const sections = [
+  { title: 'Home', url: '#' },
+  { title: 'About', url: '#' },
+  { title: 'Skills', url: '#' },
+  { title: 'Experience', url: '#' },
+  { title: 'Education', url: '#' },
+  { title: 'Service', url: '#' },
+  { title: 'Contact', url: '#' }
+];
 
 const Navbar = () => {
   return (
-    <AppBar position="static" color="secondary">
-      <nav className="navmenu" id="nav">
-        <ul>
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Skills</a>
-          </li>
-          <li>
-            <a>Experience</a>
-          </li>
-          <li>
-            <a>Education</a>
-          </li>
-          <li>
-            <a>Services</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </AppBar>
+    <Toolbar component="nav" variant="dense" className="toolbarContainer">
+      {sections.map(section => (
+        <Link
+          color="textSecondary"
+          noWrap
+          underline="none"
+          key={section.title}
+          variant="inherit"
+          href={section.url}
+          className="toolbarLink"
+        >
+          <span>{section.title}</span>
+        </Link>
+      ))}
+    </Toolbar>
   );
 };
 
