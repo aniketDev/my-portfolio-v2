@@ -1,11 +1,32 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border-top: 0.5rem solid #00968896;
+  // border-bottom: 0.5rem solid #00968896;
+  height: 20vh;
+
+  h1 {
+    color: #00968896;
+    font-size: 7rem;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+
+    span {
+      //font-size: 4rem;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      transition: all 0.2s;
+
+      &:hover {
+        font-size: 5rem;
+      }
+    }
+  }
 }
 
-html,
-body {
+.section-content {
+  height: 80vh;
 }

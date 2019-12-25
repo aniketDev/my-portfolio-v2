@@ -1,76 +1,7 @@
 @import '../../assets/scss/base';
 
 .about {
-  height: calc(100vh - #{$nav-height});
-  background-color: #ddd;
-
-  @include respond-below(lg) {
-    height: auto;
-  }
-
-  &__heading {
-    border-bottom: 0.5rem solid rgba(0, 0, 0, 0.1);
-
-    h1 {
-      font-size: 13rem;
-      color: rgba(0, 0, 0, 0.1);
-
-      @include respond-below(md) {
-        font-size: 10rem;
-      }
-
-      @include respond-below(sm) {
-        font-size: 8rem;
-      }
-
-      @include respond-below(xs) {
-        font-size: 5rem;
-      }
-
-      span {
-        font-size: 4rem;
-        color: color(teal);
-
-        @include respond-below(md) {
-          font-size: 3rem;
-        }
-
-        @include respond-below(xs) {
-          font-size: 2rem;
-        }
-      }
-    }
-  }
-
-  &__info {
-    padding: 0 4rem 0 0;
-
-    @include respond-below(lg) {
-      padding: 4rem;
-    }
-
-    @include respond-below(md) {
-      padding: 3rem 3rem 3rem 0;
-    }
-
-    @include respond-below(sm) {
-      padding: 0 3rem 3rem;
-    }
-
-    @include respond-below(xs) {
-      padding: 0 1rem 3rem;
-    }
-  }
-
-  &__images {
-    height: 90%;
-
-    @include respond-below(md) {
-      height: 80%;
-    }
-
-    @include respond-below(sm) {
-      height: 50rem;
-    }
-  }
+  height: 100vh;
+  background: $color-background;
+  color: $color-foreground;
 }
