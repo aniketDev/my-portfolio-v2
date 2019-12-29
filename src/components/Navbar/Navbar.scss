@@ -1,6 +1,6 @@
-@import '../../assets/scss/variables';
+@import '../../assets/scss/base';
 
-.toolbarContainer {
+.toolbar-container {
   background-image: linear-gradient(to left, $color-nav-dark, $color-nav-light);
   justify-content: space-between;
   overflow-x: auto;
@@ -8,12 +8,16 @@
   letter-spacing: 0.2rem;
   font-size: 1.1rem;
   font-weight: 500;
+  position: fixed !important;
+  height: $navbar-height;
+  top: 0;
+  left: 0;
+  right: 0;
 
-  .toolbarLink {
+  .toolbar-link {
     flex-shrink: 0;
     padding: 0 1rem;
     display: inline-block;
-    position: relative;
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

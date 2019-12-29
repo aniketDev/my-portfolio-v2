@@ -1,32 +1,47 @@
-.section-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // border-top: 0.5rem solid #00968896;
-  // border-bottom: 0.5rem solid #00968896;
-  height: 20vh;
+@import './assets/scss/variables';
 
-  h1 {
-    color: #00968896;
-    font-size: 7rem;
-    letter-spacing: 1.5rem;
-    text-transform: uppercase;
+.App {
+  .portfolio {
+    .section {
+      height: calc(100vh - #{$navbar-height});
+      background: $color-background;
+      color: $color-foreground;
 
-    span {
-      //font-size: 4rem;
-      letter-spacing: 1rem;
-      text-transform: uppercase;
-      width: 100%;
-      text-align: center;
-      transition: all 0.2s;
+      .section-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border-top: 0.5rem solid #00968896;
+        // border-bottom: 0.5rem solid #00968896;
+        height: 20%;
 
-      &:hover {
-        font-size: 5rem;
+        h1 {
+          color: #00968896;
+          font-size: 7rem;
+          letter-spacing: 1.5rem;
+          text-transform: uppercase;
+
+          span {
+            //font-size: 4rem;
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            transition: all 0.2s;
+
+            &:hover {
+              font-size: 5rem;
+            }
+          }
+        }
+      }
+
+      .section-content {
+        height: 80%;
+        padding: 1rem 3rem 0 3rem;
+        display: flex;
+        flex-direction: column;
       }
     }
   }
-}
-
-.section-content {
-  height: 80vh;
 }

@@ -1,7 +1,33 @@
 @import '../../assets/scss/base';
 
 .about {
-  height: 100vh;
-  background: $color-background;
-  color: $color-foreground;
+  &__content {
+    font-size: 1.5rem;
+    text-align: justify;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    button.download {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      color: $color-teal;
+      padding: 1rem 1.2rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      border: 2px solid $color-teal;
+      align-self: center;
+      transition: all 0.5s;
+      background: transparent;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.4);
+        background: $color-teal;
+        color: #fff;
+      }
+    }
+  }
 }

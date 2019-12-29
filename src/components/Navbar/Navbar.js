@@ -14,7 +14,7 @@ const sections = [
 
 const Navbar = () => {
   return (
-    <Toolbar component="nav" variant="dense" className="toolbarContainer">
+    <Toolbar component="nav" variant="dense" className="toolbar-container">
       {sections.map(section => (
         <Link
           color="textSecondary"
@@ -23,7 +23,7 @@ const Navbar = () => {
           key={section.title}
           variant="inherit"
           href={section.url}
-          className="toolbarLink"
+          className="toolbar-link"
         >
           <span>{section.title}</span>
         </Link>

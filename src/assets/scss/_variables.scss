@@ -1,5 +1,7 @@
-// Sass variables
+/* Image URLs */
 $home-image: url('/assets/images/header-image.jpg');
+
+/* Color schemes */
 $color-nav-dark: #016b89;
 $color-nav-light: #0d9f90;
 $color-background: rgb(38, 50, 56);
@@ -27,4 +29,5 @@ $color-blue-grey: #607d8b;
 $color-yellow-light: lighten($color-yellow, 40%);
 $shadow: rgba(0, 0, 0, 0.4);
 
-$nav-height: 7vh;
+/* Attribute properties */
+$navbar-height: 3rem;
