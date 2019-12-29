@@ -1,0 +1,28 @@
+@import '../../assets//scss/variables';
+
+.skills {
+  &__content {
+    .card {
+      background-color: lighten($color: $color-background, $amount: 10);
+      color: $color-foreground;
+
+      &__image {
+        height: 5rem;
+        background-size: contain;
+      }
+
+      &__content {
+        text-align: center;
+      }
+
+      &__actions {
+        display: flex;
+        justify-content: center;
+
+        a {
+          color: $color-foreground;
+        }
+      }
+    }
+  }
+}
