@@ -1,6 +1,69 @@
+@import '../../assets/scss/variables';
+
 .timeline-container {
   .timeline-header {
     text-align: right;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
+
+    h4 {
+      color: $color-deep-orange;
+    }
+  }
+
+  .timeline-icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0.3rem;
+      transform: translateX(-50%);
+      height: 100%;
+      background-color: $color-red;
+    }
+
+    .icon-container {
+      width: 3rem;
+      height: 3rem;
+      background-color: $color-red;
+      border-radius: 50%;
+      position: relative;
+      margin-top: 2rem;
+
+      .icon {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .timeline-content {
+    h4 {
+      position: relative;
+      padding-top: 2.5rem;
+      color: $color-deep-orange;
+      border-bottom: 0.2rem solid $color-red;
+      display: inline-block;
+    }
+
+    p {
+      padding: 1rem 0;
+    }
+
+    ul {
+      padding: 1rem 0;
+
+      li {
+        list-style: circle;
+        position: relative;
+      }
+    }
   }
 }

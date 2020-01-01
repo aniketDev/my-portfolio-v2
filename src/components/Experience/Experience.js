@@ -11,6 +11,8 @@ const Experience = () => {
       </Grid>
       <Grid item container xs={12} className="section-content experience__content">
         <Timeline />
+        <Timeline />
+        <Timeline />
       </Grid>
     </Grid>
   );
