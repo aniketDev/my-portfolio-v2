@@ -53,16 +53,18 @@
       display: inline-block;
     }
 
-    p {
-      padding: 1rem 0;
-    }
-
     ul {
       padding: 1rem 0;
 
       li {
-        list-style: circle;
-        position: relative;
+        padding: 0;
+        align-items: flex-start;
+
+        .list-icon {
+          color: $color-deep-orange;
+          min-width: 1rem;
+          padding: 0.3rem 1rem 0.3rem 0;
+        }
       }
     }
   }

@@ -2,6 +2,9 @@
 
 .App {
   .portfolio {
+    .MuiTypography-root {
+      font-family: inherit;
+    }
     .section {
       min-height: calc(100vh - #{$navbar-height});
       background: $color-background;
