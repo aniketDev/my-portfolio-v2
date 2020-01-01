@@ -11,89 +11,16 @@ import {
   LinearProgress
 } from '@material-ui/core';
 import './Skills.scss';
+import { cards } from './SkillsData';
 
 const Skills = () => {
-  const cards = [
-    {
-      title: 'JavaScript',
-      image: require('../../assets/images/logo/js.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'HTML5',
-      image: require('../../assets/images/logo/html.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'CSS3',
-      image: require('../../assets/images/logo/css.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'React js',
-      image: require('../../assets/images/logo/react.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'SCSS',
-      image: require('../../assets/images/logo/sass.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'jQuery',
-      image: require('../../assets/images/logo/jquery.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'JavaScript',
-      image: require('../../assets/images/logo/js1.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'Spring',
-      image: require('../../assets/images/logo/spring.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'JAVA',
-      image: require('../../assets/images/logo/java.jpg'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'JavaScript',
-      image: require('../../assets/images/logo/js1.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'JavaScript',
-      image: require('../../assets/images/logo/js1.png'),
-      value: 80,
-      link: '#aaa'
-    },
-    {
-      title: 'JavaScript',
-      image: require('../../assets/images/logo/js1.png'),
-      value: 80,
-      link: '#aaa'
-    }
-  ];
   return (
     <Grid container id="skills" className="skills section">
       <Grid item xs={12} className="section-heading">
         <h1>My Skills</h1>
       </Grid>
       <Grid item container xs={12} className="section-content skills__content">
-        <Grid item container spacing={3}>
+        <Grid item container spacing={5}>
           {cards.map(card => (
             <Grid item xs={2}>
               <Card raised="true" className="card">
