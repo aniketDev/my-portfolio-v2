@@ -12,7 +12,7 @@ const Experience = () => {
       </Grid>
       <Grid item container xs={12} className="section-content experience__content">
         {experienceData.map(data => (
-          <Timeline data={data} />
+          <Timeline key={data.headerTitle} data={data} />
         ))}
       </Grid>
     </Grid>

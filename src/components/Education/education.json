@@ -1,0 +1,42 @@
+[
+  {
+    "headerTitle": "Master Degree (M.Tech)",
+    "headerSubtitle1": "2014 - 2016",
+    "headerSubtitle2": "",
+    "icon": "university",
+    "contentTitle": "Maulana Abul Kalam Azad University of Technology, Kolkata",
+    "contentLists": [
+      "Maulana Abul Kalam Azad University of Technology, West Bengal (MAKAUT, WB), formerly West Bengal University of Technology (WBUT), is a state university located in Kolkata, India. Founded in 2000 and funded initially by the Government of West Bengal, MAKAUT, WB provides facilities for the pursuit of degree and advanced-level courses in engineering, management and other professional areas through affiliated institutions and in-house departments."
+    ]
+  },
+  {
+    "headerTitle": "Bachelor Degree (B.Tech)",
+    "headerSubtitle1": "2009 - 2013",
+    "headerSubtitle2": "",
+    "icon": "university",
+    "contentTitle": "Bankura Unnayani Institute of Engineering, WB",
+    "contentLists": [
+      "The Bankura Unnayani Institute of Engineering or BUIE is a government-aided (TEQUIP-II funded) college in West Bengal, India providing under-graduate as well as post-graduate courses in engineering and technology disciplines. It was established in 1998 as the first engineering college in Bankura district. The college is affiliated with Maulana Abul Kalam Azad University of Technology and all the programmes are approved by the All India Council for Technical Education."
+    ]
+  },
+  {
+    "headerTitle": "Higher Secondary",
+    "headerSubtitle1": "2007 - 2009",
+    "headerSubtitle2": "",
+    "icon": "school",
+    "contentTitle": "Kalagachia Jagadish Vidyapith, WB",
+    "contentLists": [
+      "The school follows the course curricula of West Bengal Board of Secondary Education (WBBSE) and West Bengal Council of Higher Secondary Education (WBCHSE) for Standard 10th and 12th Board examinations respectively."
+    ]
+  },
+  {
+    "headerTitle": "Secondary",
+    "headerSubtitle1": "2007",
+    "headerSubtitle2": "",
+    "icon": "school",
+    "contentTitle": "Kalagachia Jagadish Vidyapith, WB",
+    "contentLists": [
+      "The school follows the course curricula of West Bengal Board of Secondary Education (WBBSE) and West Bengal Council of Higher Secondary Education (WBCHSE) for Standard 10th and 12th Board examinations respectively."
+    ]
+  }
+]

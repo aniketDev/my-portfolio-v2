@@ -36,7 +36,7 @@ export const cards = [
     link: '#aaa'
   },
   {
-    title: 'JavaScript',
+    title: 'JavaScript1',
     image: require('../../assets/images/logo/js1.png'),
     value: 80,
     link: '#aaa'
@@ -66,7 +66,7 @@ export const cards = [
     link: '#aaa'
   },
   {
-    title: 'JavaScript',
+    title: 'JavaScript2',
     image: require('../../assets/images/logo/redux1.png'),
     value: 80,
     link: '#aaa'

@@ -22,14 +22,14 @@ const Skills = () => {
       <Grid item container xs={12} className="section-content skills__content">
         <Grid item container spacing={5}>
           {cards.map(card => (
-            <Grid item xs={2}>
-              <Card raised="true" className="card">
+            <Grid item xs={2} key={card.title}>
+              <Card raised={true} className="card">
                 <CardActionArea>
                   <CardMedia className="card__image" image={card.image} title={card.title} />
                   <CardContent className="card__content">
                     <Typography variant="h5">{card.title}</Typography>
                     <br />
-                    <LinearProgress variant="buffer" value={card.value} color="secondary" />
+                    <LinearProgress variant="determinate" value={card.value} color="secondary" />
                   </CardContent>
                 </CardActionArea>
                 <CardActions className="card__actions">

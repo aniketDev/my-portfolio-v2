@@ -3,7 +3,6 @@ import { Grid, Button } from '@material-ui/core';
 import './Home.scss';
 
 const Home = () => {
-  const profileImage = require('../../assets/images/profile-image.jpg');
   return (
     <Grid container className="home" alignItems="center" alignContent="center">
       <Grid item xs={7}>
