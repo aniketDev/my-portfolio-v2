@@ -1,6 +1,6 @@
 @import '../../assets/scss/variables';
 
-.services {
+.contact {
   &__content {
     .card {
       &__image {
@@ -11,7 +11,14 @@
         &__header {
           font-weight: 500;
           color: $color-teal;
+          font-size: 2rem;
         }
+      }
+    }
+
+    &__footer {
+      &__link {
+        font-size: 3rem;
       }
     }
   }

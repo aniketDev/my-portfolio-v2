@@ -43,9 +43,9 @@ function App() {
         <Grid item xs={12}>
           <Contact />
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Footer />
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
   );

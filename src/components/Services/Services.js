@@ -3,7 +3,6 @@ import { Grid, Typography, Card, CardActionArea, CardMedia, CardContent } from '
 import './Services.scss';
 import { ServicesData } from './ServicesData';
 
-const img = require('../../assets/images/contact-bg.jpg');
 const Services = () => {
   return (
     <Grid item container className="services section">
@@ -27,7 +26,7 @@ const Services = () => {
             <Grid item xs={4} key={data.id}>
               <Card raised={true} className="card">
                 <CardActionArea>
-                  <CardMedia className="card__image" image={img} title="title" />
+                  <CardMedia className="card__image" image={data.image} title={data.title} />
                   <CardContent className="card__content">
                     <Typography
                       gutterBottom
