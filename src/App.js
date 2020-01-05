@@ -10,6 +10,7 @@ import Services from './components/Services/Services';
 import Skills from './components/Skills/Skills';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import Work from './components/Work/Work';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         </Grid>
         <Grid item xs={12}>
           <Education />
+        </Grid>
+        <Grid item xs={12}>
+          <Work />
         </Grid>
         <Grid item xs={12}>
           <Services />
