@@ -4,7 +4,7 @@ import './About.scss';
 
 const About = () => {
   return (
-    <Grid container className="about section">
+    <Grid container className="about section" id="about">
       <Grid item xs={12} className="section-heading">
         <h1>
           About Me

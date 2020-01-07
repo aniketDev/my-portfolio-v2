@@ -4,7 +4,7 @@ import { Toolbar, Link } from '@material-ui/core';
 
 const sections = [
   { title: 'Home', url: '#' },
-  { title: 'About', url: '#' },
+  { title: 'About', url: '#about' },
   { title: 'Skills', url: '#' },
   { title: 'Experience', url: '#' },
   { title: 'Education', url: '#' },
@@ -22,10 +22,11 @@ const Navbar = () => {
           underline="none"
           key={section.title}
           variant="inherit"
-          href={section.url}
+          // href={section.url}
           className="toolbar-link"
+          onClick={() => console.log('gasjakhskh')}
         >
-          <span>{section.title}</span>
+          {section.title}
         </Link>
       ))}
     </Toolbar>

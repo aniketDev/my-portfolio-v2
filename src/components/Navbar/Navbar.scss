@@ -18,28 +18,23 @@
   .toolbar-link {
     flex-shrink: 0;
     padding: 0 1rem;
-    display: inline-block;
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
-    span {
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0.2rem;
+      background: $color-amber;
+      transition: width 350ms ease-out;
+    }
+
+    &:hover {
       &::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0.2rem;
-        position: absolute;
-        background: $color-amber;
-        transition: width 350ms ease-out;
-      }
-
-      &:hover {
+        width: 100%;
         color: $color-yellow;
-
-        &::after {
-          width: 100%;
-        }
       }
     }
   }
