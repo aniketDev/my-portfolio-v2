@@ -6,13 +6,13 @@ export const ContactData = [
     description: 'Commodo ut velit aliqua quis sunt elit culpa consequat.'
   },
   {
-    id: 1,
+    id: 2,
     image: require('../../assets/images/contact-bg.jpg'),
     title: 'Phone',
     description: 'Commodo ut velit aliqua quis sunt elit culpa consequat.'
   },
   {
-    id: 1,
+    id: 3,
     image: require('../../assets/images/contact-bg.jpg'),
     title: 'Email',
     description: 'Commodo ut velit aliqua quis sunt elit culpa consequat.'
