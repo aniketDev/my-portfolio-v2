@@ -33,7 +33,7 @@ const Skills = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions className="card__actions">
-                  <Button href={card.link} size="small">
+                  <Button href={card.link} size="small" target="_blank">
                     Learn More
                   </Button>
                 </CardActions>
