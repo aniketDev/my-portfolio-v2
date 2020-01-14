@@ -7,10 +7,79 @@
         height: 10rem;
       }
 
-      &__content {
-        &__header {
-          font-weight: 500;
-          color: $color-teal;
+      &:hover {
+        .content__button {
+          visibility: visible;
+        }
+      }
+
+      &__link {
+        .icon {
+          background-image: none;
+          margin: 0 auto -4rem;
+          border-radius: 50%;
+          width: 8rem;
+          height: 8rem;
+          transition: background 600ms ease;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            position: relative;
+            z-index: 5;
+            max-width: 100%;
+            border: none;
+          }
+        }
+
+        .content {
+          display: grid;
+          background: rgba(29, 32, 36, 0.9);
+          border-radius: 3rem;
+          padding: 5rem 1rem 3rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          height: calc(100% - 5rem);
+          color: $color-foreground;
+          text-align: center;
+          transition: background 600ms ease;
+
+          &:hover {
+            background-image: linear-gradient(to bottom, #e91e63, #ffeb3b);
+            color: rgba(29, 32, 36, 0.9);
+          }
+
+          &__title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          &__text {
+            margin-bottom: 1rem;
+          }
+
+          &__button {
+            margin: 0.5rem;
+            visibility: hidden;
+            color: #2ebfff;
+            transition: visibility 150ms linear;
+            display: flex;
+            justify-content: center;
+
+            svg {
+              width: 40px;
+              // display: inline-block;
+              text-align: left;
+              transition: padding 100ms ease-out, width 100ms ease-out;
+            }
+
+            &:hover {
+              svg {
+                // width: 40px;
+                padding-left: 1rem;
+              }
+            }
+          }
         }
       }
     }

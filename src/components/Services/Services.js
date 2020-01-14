@@ -1,7 +1,17 @@
 import React from 'react';
-import { Grid, Typography, Card, CardActionArea, CardMedia, CardContent } from '@material-ui/core';
+import {
+  Grid,
+  Typography,
+  Card,
+  CardActionArea,
+  CardMedia,
+  CardContent,
+  Link
+} from '@material-ui/core';
 import './Services.scss';
 import { ServicesData } from './ServicesData';
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Services = () => {
   return (
@@ -23,30 +33,29 @@ const Services = () => {
       <Grid item container xs={12} className="section-content services__content" justify="center">
         <Grid item container xs={10} spacing={5}>
           {ServicesData.map(data => (
-            <Grid item xs={4} key={data.id}>
-              <Card raised={true} className="card">
-                <CardActionArea>
-                  <CardMedia className="card__image" image={data.image} title={data.title} />
-                  <CardContent className="card__content">
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      align="center"
-                      className="card__content__header"
-                    >
-                      {data.title}
-                    </Typography>
-                    <Typography
-                      paragraph={true}
-                      component="p"
-                      align="center"
-                      className="card__content__details"
-                    >
-                      {data.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+            <Grid item xs={4} key={data.id} className="card">
+              <Link
+                color="textSecondary"
+                underline="none"
+                variant="inherit"
+                href={data.url}
+                className="card__link"
+              >
+                <div className="icon">
+                  <img alt="" src={data.image} />
+                </div>
+                <div className="content">
+                  <Typography className="content__title" variant="h5" component="h5">
+                    {data.title}
+                  </Typography>
+                  <div className="content__text">{data.description}</div>
+                  <div className="content__button">
+                    <Typography component="span">Read more</Typography>
+                    <ArrowRightAltIcon />
+                    {/* <FontAwesomeIcon icon="long-arrow-alt-right" size="lg" /> */}
+                  </div>
+                </div>
+              </Link>
             </Grid>
           ))}
         </Grid>

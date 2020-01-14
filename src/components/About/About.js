@@ -26,7 +26,7 @@ const About = () => {
           responsible for designing and developing front end part of the entire application, I
           learned a lot of things by myself and became a passionate web developer. After finishing
           the project and deploying it in production I was looking for working in different domains
-          and started working in Primesoft Ip Solutions Pvt. Ltd. as a Software Engineer. I'm
+          and started working in Primesoft IP Solutions Pvt. Ltd. as a Software Engineer. I'm
           currently working in this organization for almost 1 year. During this time period I've
           worked there in a banking project and other projects using various tools and technologies
           like Angular 5, Ionic 3, React js and Backbone js.

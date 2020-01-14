@@ -1,8 +1,20 @@
 [
   {
-    "headerTitle": "Junior Software Developer1",
+    "headerTitle": "Software Engineer",
     "headerSubtitle1": "March 2018 - Present",
-    "headerSubtitle2": "11 months",
+    "headerSubtitle2": "11 Months",
+    "icon": "briefcase",
+    "contentTitle": "PrimeSoft IP Solutions Pvt. Ltd., Bangalore",
+    "contentLists": [
+      "Developing web application using Angular 5.",
+      "Developing hybrid mobile application of a banking project using Ionic 3.",
+      "Developing web application using react js and redux."
+    ]
+  },
+  {
+    "headerTitle": "Junior Software Developer",
+    "headerSubtitle1": "March 2018 - Feb 2019",
+    "headerSubtitle2": "1 Year",
     "icon": "briefcase",
     "contentTitle": "Balihans Software Pvt. Ltd., Bangalore",
     "contentLists": [
@@ -13,29 +25,16 @@
     ]
   },
   {
-    "headerTitle": "Junior Software Developer2",
-    "headerSubtitle1": "March 2018 - Present",
-    "headerSubtitle2": "11 months",
+    "headerTitle": "Project Coordinator",
+    "headerSubtitle1": "Aug 2017 - Nov 2017",
+    "headerSubtitle2": "4 months",
     "icon": "briefcase",
-    "contentTitle": "Balihans Software Pvt. Ltd., Bangalore",
+    "contentTitle": "Innova Uniﬁed Management Services Pvt. Ltd., Kolkata",
     "contentLists": [
-      "Single-handedly designing and developing the front-end part of the company's own product which is a web application software called Qnabu, leading career management and school automation tool.",
-      "Design websites, layouts, web app interfaces and more.",
-      "Researching different software programs and libraries.",
-      "Maintaining software documentation."
-    ]
-  },
-  {
-    "headerTitle": "Junior Software Developer3",
-    "headerSubtitle1": "March 2018 - Present",
-    "headerSubtitle2": "11 months",
-    "icon": "briefcase",
-    "contentTitle": "Balihans Software Pvt. Ltd., Bangalore",
-    "contentLists": [
-      "Single-handedly designing and developing the front-end part of the company's own product which is a web application software called Qnabu, leading career management and school automation tool.",
-      "Design websites, layouts, web app interfaces and more.",
-      "Researching different software programs and libraries.",
-      "Maintaining software documentation."
+      "Manually test any project software or application.",
+      "Manage all the ongoing projects by keeping detailed project notes and records.",
+      "Keeping all the members of the team up-to-date with current information and paperwork.",
+      "Communicating with team members to ensure optimal strategy and maximum eﬃciency."
     ]
   }
 ]

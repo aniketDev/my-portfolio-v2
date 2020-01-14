@@ -12,6 +12,17 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Work from './components/Work/Work';
 
+import {
+  faBriefcase,
+  faAngleRight,
+  faUniversity,
+  faSchool,
+  faLongArrowAltRight
+} from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+library.add(faBriefcase, faAngleRight, faUniversity, faSchool, faLongArrowAltRight);
+
 function App() {
   return (
     <div className="App">

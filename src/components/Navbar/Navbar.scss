@@ -18,6 +18,7 @@
   .toolbar-link {
     flex-shrink: 0;
     padding: 0 1rem;
+    cursor: pointer;
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

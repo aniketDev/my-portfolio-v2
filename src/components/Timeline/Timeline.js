@@ -2,15 +2,6 @@ import React from 'react';
 import { Grid, Typography, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import './Timeline.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faBriefcase,
-  faAngleRight,
-  faUniversity,
-  faSchool
-} from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-
-library.add(faBriefcase, faAngleRight, faUniversity, faSchool);
 
 const Timeline = ({ data }) => {
   return (
@@ -41,7 +32,7 @@ const Timeline = ({ data }) => {
             data.contentLists.map(list => (
               <ListItem disableGutters={true} key={list}>
                 <ListItemIcon className="list-icon">
-                  <FontAwesomeIcon className="icon" icon={faAngleRight} size="lg" />
+                  <FontAwesomeIcon className="icon" icon="angle-right" size="lg" />
                 </ListItemIcon>
                 <ListItemText primary={list} />
               </ListItem>
