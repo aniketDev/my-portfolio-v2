@@ -18,3 +18,21 @@ export const ContactData = [
     description: 'aniketmandal9@gmail.com'
   }
 ];
+
+export const LinksData = [
+  {
+    id: 1,
+    url: require('../../assets/icons/svg/linkedin.svg'),
+    icon: require('../../assets/icons/svg/linkedin.svg')
+  },
+  {
+    id: 2,
+    url: require('../../assets/icons/svg/github.svg'),
+    icon: require('../../assets/icons/svg/github.svg')
+  },
+  {
+    id: 3,
+    url: require('../../assets/icons/svg/freecodecamp.svg'),
+    icon: require('../../assets/icons/svg/freecodecamp.svg')
+  }
+];

@@ -1,22 +1,10 @@
 import React from 'react';
-import {
-  Grid,
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActionArea,
-  Link
-} from '@material-ui/core';
+import { Grid, Card, CardMedia, CardContent, Typography, Link } from '@material-ui/core';
 import './Contact.scss';
 import { ContactData } from './ContactData';
+import { LinksData } from './ContactData';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faUniversity, faSchool } from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
-library.add(fab);
 
 const Contact = () => {
   return (
@@ -62,27 +50,18 @@ const Contact = () => {
         </Grid>
 
         <Grid item container xs={4} spacing={5} className="contact__content__footer">
-          <Grid item xs={3}>
-            <Link
-              noWrap
-              underline="none"
-              key="1"
-              href="#"
-              onClick={event => event.preventDefault()}
-              className="contact__content__footer__link"
-            >
-              <FontAwesomeIcon icon={['fab', 'linkedin']} />
-            </Link>
-          </Grid>
-          <Grid item xs={3}>
-            <LinkedInIcon fontSize="large" />
-          </Grid>
-          <Grid item xs={3}>
-            <LinkedInIcon fontSize="large" />
-          </Grid>
-          <Grid item xs={3}>
-            <LinkedInIcon fontSize="large" />
-          </Grid>
+          {LinksData.map(data => (
+            <Grid item xs={3} key={data.id}>
+              <Link
+                noWrap
+                underline="none"
+                href={data.url}
+                className="contact__content__footer__link"
+              >
+                <FontAwesomeIcon className="icon" icon={['fab', 'github-square']} />
+              </Link>
+            </Grid>
+          ))}
         </Grid>
       </Grid>
     </Grid>

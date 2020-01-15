@@ -19,6 +19,11 @@
     &__footer {
       &__link {
         font-size: 3rem;
+
+        img.icon {
+          height: 3rem;
+          width: 3rem;
+        }
       }
     }
   }

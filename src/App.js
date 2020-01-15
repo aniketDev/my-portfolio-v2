@@ -19,9 +19,10 @@ import {
   faSchool,
   faLongArrowAltRight
 } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-library.add(faBriefcase, faAngleRight, faUniversity, faSchool, faLongArrowAltRight);
+library.add(fab, faBriefcase, faAngleRight, faUniversity, faSchool, faLongArrowAltRight);
 
 function App() {
   return (
