@@ -1,20 +1,20 @@
 export const ContactData = [
   {
     id: 1,
-    image: require('../../assets/images/contact-bg.jpg'),
+    image: require('../../assets/images/contact-address.jpg'),
     title: 'Address',
-    description: 'Commodo ut velit aliqua quis sunt elit culpa consequat.'
+    description: 'BTM layout 1, Bangalore - 560068'
   },
   {
     id: 2,
-    image: require('../../assets/images/contact-bg.jpg'),
+    image: require('../../assets/images/contact-phone.jpg'),
     title: 'Phone',
-    description: 'Commodo ut velit aliqua quis sunt elit culpa consequat.'
+    description: '+91-7872495227.'
   },
   {
     id: 3,
-    image: require('../../assets/images/contact-bg.jpg'),
+    image: require('../../assets/images/contact-email.jpg'),
     title: 'Email',
-    description: 'Commodo ut velit aliqua quis sunt elit culpa consequat.'
+    description: 'aniketmandal9@gmail.com'
   }
 ];

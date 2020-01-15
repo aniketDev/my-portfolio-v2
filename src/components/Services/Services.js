@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Grid,
-  Typography,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-  Link
-} from '@material-ui/core';
+import { Grid, Typography, Link, Button } from '@material-ui/core';
 import './Services.scss';
 import { ServicesData } from './ServicesData';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
@@ -40,6 +32,7 @@ const Services = () => {
                 variant="inherit"
                 href={data.url}
                 className="card__link"
+                target="_blank"
               >
                 <div className="icon">
                   <img alt="" src={data.image} />

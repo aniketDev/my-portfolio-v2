@@ -2,7 +2,7 @@ export const ServicesData = [
   {
     id: 1,
     image: require('../../assets/images/website-dev.png'),
-    url: '#',
+    url: 'https://en.wikipedia.org/wiki/Web_development',
     title: 'Website Design and Development',
     description:
       'I can both design and develop any kind of static or dynamic websites which are responsive, elegant, beautiful, user friendly, SEO optimized and much more using various UI technologies like HTML, CSS, SCSS, JavaScript, Bootstrap, Material UI, Clarity Design etc.'
@@ -10,7 +10,7 @@ export const ServicesData = [
   {
     id: 2,
     image: require('../../assets/images/webapp-dev.jpg'),
-    url: '#',
+    url: 'https://en.wikipedia.org/wiki/Web_application_development',
     title: 'Web Application Design and Development',
     description:
       'I can both design and develop dynamic web applications which are responsive, elegant and user-friendly using frontend frameworks like React js, Angular etc. I emphasize on minimal use of external libraries to boost the app performance.'
@@ -18,10 +18,10 @@ export const ServicesData = [
   {
     id: 3,
     image: require('../../assets/images/mob-dev.png'),
-    url: '#',
+    url: 'https://en.wikipedia.org/wiki/Mobile_app_development',
     title: 'Mobile Application Design and Development',
     description:
-      'With the knowledge and experience of working in a hybrid mobile banking application using Ionic Framework, I can develop mobile applications also.'
+      'With the knowledge and experience of working in a hybrid mobile banking application using Ionic Framework, I can develop mobile applications also using Ionic framework or react-native.'
   }
   // {
   //   id: 4,
