@@ -23,9 +23,9 @@ const Services = () => {
       <Grid item container xs={12} justify="center">
         <Grid item xs={8}>
           <Typography component="p" paragraph={true} align="center">
-            Aliquip proident consequat commodo quis aute aute et. Eu adipisicing velit fugiat
-            reprehenderit enim aute. Irure deserunt in in ullamco nulla quis. Nulla commodo
-            exercitation consequat ut enim qui minim elit esse quis elit.
+            In my 2 years of experience I've learned many technologies and never stopped learning
+            new skills. With that knowledge and experience bellow are the services I can offer for
+            you.
           </Typography>
         </Grid>
       </Grid>
