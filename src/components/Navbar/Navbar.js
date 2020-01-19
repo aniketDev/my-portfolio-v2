@@ -3,14 +3,16 @@ import './Navbar.scss';
 import { Toolbar, Link } from '@material-ui/core';
 
 const sections = [
-  { title: 'Home', url: '#' },
-  { title: 'About', url: '#about' },
-  { title: 'Skills', url: '#' },
-  { title: 'Experience', url: '#' },
-  { title: 'Education', url: '#' },
-  { title: 'Service', url: '#' },
-  { title: 'Contact', url: '#' }
+  { title: 'Home', url: '#', ref: 'aboutRef' },
+  { title: 'About', url: '#about', ref: 'aboutRef' },
+  { title: 'Skills', url: '#', ref: 'aboutRef' },
+  { title: 'Experience', url: '#', ref: 'aboutRef' },
+  { title: 'Education', url: '#', ref: 'aboutRef' },
+  { title: 'Service', url: '#', ref: 'aboutRef' },
+  { title: 'Contact', url: '#', ref: 'aboutRef' }
 ];
+
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
 
 const Navbar = () => {
   return (
@@ -24,7 +26,7 @@ const Navbar = () => {
           variant="inherit"
           // href={section.url}
           className="toolbar-link"
-          onClick={() => console.log('gasjakhskh')}
+          onClick={section => scrollToRef(section.ref)}
         >
           {section.title}
         </Link>

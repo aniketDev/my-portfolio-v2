@@ -1,9 +1,8 @@
 import React from 'react';
-import { Grid, Typography, Link, Button } from '@material-ui/core';
+import { Grid, Typography, Link } from '@material-ui/core';
 import './Services.scss';
 import { ServicesData } from './ServicesData';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Services = () => {
   return (

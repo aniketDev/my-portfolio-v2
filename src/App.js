@@ -9,57 +9,79 @@ import Experience from './components/Experience/Experience';
 import Services from './components/Services/Services';
 import Skills from './components/Skills/Skills';
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
 import Work from './components/Work/Work';
+import { createMuiTheme, MuiThemeProvider, ThemeProvider } from '@material-ui/core/styles';
 
 import {
   faBriefcase,
   faAngleRight,
   faUniversity,
   faSchool,
-  faLongArrowAltRight
+  faLongArrowAltRight,
+  faMapMarkedAlt,
+  faMobileAlt,
+  faEnvelopeOpen
 } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-library.add(fab, faBriefcase, faAngleRight, faUniversity, faSchool, faLongArrowAltRight);
+library.add(
+  fab,
+  faBriefcase,
+  faAngleRight,
+  faUniversity,
+  faSchool,
+  faLongArrowAltRight,
+  faMapMarkedAlt,
+  faMobileAlt,
+  faEnvelopeOpen
+);
+
+const THEME = createMuiTheme({
+  typography: {
+    fontFamily: '"Montserrat", "Open Sans", sans-serif'
+  }
+});
 
 function App() {
   return (
-    <div className="App">
-      <Grid container direction="column" className="portfolio">
-        <Grid item xs={12}>
-          <Navbar />
-        </Grid>
-        <Grid item xs={12}>
-          <Home />
-        </Grid>
-        <Grid item xs={12}>
-          <About />
-        </Grid>
-        <Grid item xs={12}>
-          <Skills />
-        </Grid>
-        <Grid item xs={12}>
-          <Experience />
-        </Grid>
-        <Grid item xs={12}>
-          <Education />
-        </Grid>
-        <Grid item xs={12}>
-          <Work />
-        </Grid>
-        <Grid item xs={12}>
-          <Services />
-        </Grid>
-        <Grid item xs={12}>
-          <Contact />
-        </Grid>
-        {/* <Grid item xs={12}>
+    <ThemeProvider theme={THEME}>
+      <div className="App">
+        <Grid container direction="column" className="portfolio">
+          <Grid item xs={12}>
+            <Navbar />
+          </Grid>
+          <Grid item xs={12}>
+            <Home />
+          </Grid>
+          <Grid item xs={12}>
+            <About />
+          </Grid>
+          <Grid item xs={12}>
+            <Skills />
+          </Grid>
+          <Grid item xs={12}>
+            <Experience />
+          </Grid>
+          <Grid item xs={12}>
+            <Education />
+          </Grid>
+          <Grid item xs={12}>
+            <Work />
+          </Grid>
+          <Grid item xs={12}>
+            <Services />
+          </Grid>
+          <Grid item xs={12}>
+            <Contact />
+          </Grid>
+          {/* <Grid item xs={12}>
           <Footer />
         </Grid> */}
-      </Grid>
-    </div>
+        </Grid>
+      </div>
+    </ThemeProvider>
   );
 }
 

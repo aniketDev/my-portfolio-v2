@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import './About.scss';
 
 const About = () => {
+  const aboutRef = useRef(null);
+
   return (
-    <Grid container className="about section" id="about">
+    <Grid container className="about section" id="about" innerRef={aboutRef}>
       <Grid item xs={12} className="section-heading">
         <h1>
           About Me

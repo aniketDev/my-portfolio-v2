@@ -3,7 +3,6 @@
 .App {
   .portfolio {
     .section {
-      // min-height: calc(100vh - #{$navbar-height});
       background: $color-background;
       color: $color-foreground;
 
@@ -11,8 +10,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // border-top: 0.5rem solid #00968896;
-        // border-bottom: 0.5rem solid #00968896;
         height: 20%;
 
         h1 {
@@ -22,7 +19,6 @@
           text-transform: uppercase;
 
           span {
-            //font-size: 4rem;
             letter-spacing: 1rem;
             text-transform: uppercase;
             width: 100%;
@@ -39,7 +35,7 @@
       .section-content {
         padding: 1rem 3rem 3rem 3rem;
         display: flex;
-        border-bottom: 0.1rem solid #00968896;
+        border-bottom: 0.1rem solid $color-teal;
       }
     }
   }
