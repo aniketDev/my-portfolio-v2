@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Grid container className="home" alignItems="center" alignContent="center">
       <Grid item xs={12}>
-        <img class="home-image" src={homeImage} alt="a"></img>
+        <img className="home-image" src={homeImage} alt="a"></img>
         <div className="home-text-container">
           <h1>
             <span>Hello, I am</span>

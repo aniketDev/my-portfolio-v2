@@ -54,16 +54,22 @@ export const cards = [
     link: 'https://jquery.com/'
   },
   {
-    title: 'Backbone js',
-    image: require('../../assets/images/logo/bb.png'),
-    value: 80,
-    link: 'https://backbonejs.org/'
-  },
-  {
     title: 'Bootstrap',
     image: require('../../assets/images/logo/bs.png'),
     value: 80,
     link: 'https://getbootstrap.com/'
+  },
+  {
+    title: 'Material UI',
+    image: require('../../assets/images/logo/material_ui.svg'),
+    value: 80,
+    link: 'https://material-ui.com/'
+  },
+  {
+    title: 'TypeScript',
+    image: require('../../assets/images/logo/typescript.svg'),
+    value: 80,
+    link: 'https://www.typescriptlang.org/'
   },
   {
     title: 'GraphQl',
@@ -84,23 +90,23 @@ export const cards = [
     link: 'https://docs.spring.io/spring/docs/current/spring-framework-reference/'
   },
   {
-    title: 'Apache Maven',
+    title: 'Maven',
     image: require('../../assets/images/logo/maven.png'),
     value: 70,
     link: 'https://maven.apache.org/index.html'
   },
   {
-    title: 'JSP',
-    image: require('../../assets/images/logo/jsp.png'),
-    value: 70,
-    link: 'https://docs.oracle.com/javaee/5/tutorial/doc/bnagx.html'
-  },
-  {
-    title: 'Servlet',
-    image: require('../../assets/images/logo/servlet.png'),
+    title: 'JSP & Servlet',
+    image: require('../../assets/images/logo/jspserv.png'),
     value: 70,
     link: 'http://www.servlets.com/docs/'
   },
+  // {
+  //   title: 'Servlet',
+  //   image: require('../../assets/images/logo/servlet.png'),
+  //   value: 70,
+  //   link: 'http://www.servlets.com/docs/'
+  // },
   {
     title: 'Git',
     image: require('../../assets/images/logo/git.png'),
@@ -113,4 +119,10 @@ export const cards = [
     value: 80,
     link: 'https://www.atlassian.com/software/jira'
   }
+  // {
+  //   title: 'Backbone js',
+  //   image: require('../../assets/images/logo/bb.png'),
+  //   value: 80,
+  //   link: 'https://backbonejs.org/'
+  // },
 ];

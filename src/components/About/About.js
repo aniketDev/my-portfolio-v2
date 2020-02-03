@@ -15,9 +15,8 @@ const About = () => {
       </Grid>
 
       <Grid container item xs={12} className="about__content">
-        <Grid item xs={7} className="about__content__text">
+        <Grid item xs={8} className="about__content__text">
           <Typography variant="inherit" component="p">
-            <span>&#8220;</span>
             Hi there! I'm Aniket Mandal. I'm a professional <strong>Frontend Developer</strong> with
             <strong> 2+ years</strong> of professional experience.
           </Typography>
@@ -42,7 +41,7 @@ const About = () => {
 
           <button className="download">Download CV</button>
         </Grid>
-        <Grid item xs={5} className="about__content__image">
+        <Grid item xs={4} className="about__content__image">
           <div className="profile-image"></div>
         </Grid>
       </Grid>

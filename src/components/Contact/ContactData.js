@@ -11,7 +11,7 @@ export const ContactData = [
     image: require('../../assets/images/contact-phone.jpg'),
     icon: 'mobile-alt',
     title: 'Phone',
-    description: '+91-7872495227.'
+    description: '+91-7872495227'
   },
   {
     id: 3,
