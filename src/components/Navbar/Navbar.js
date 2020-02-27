@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Navbar.scss';
 import { Toolbar, Link } from '@material-ui/core';
 
 const sections = [
-  { title: 'Home', url: '#', ref: 'aboutRef' },
+  { title: 'Home', url: '#home', ref: 'aboutRef' },
   { title: 'About', url: '#about', ref: 'aboutRef' },
-  { title: 'Skills', url: '#', ref: 'aboutRef' },
-  { title: 'Experience', url: '#', ref: 'aboutRef' },
-  { title: 'Education', url: '#', ref: 'aboutRef' },
-  { title: 'Service', url: '#', ref: 'aboutRef' },
-  { title: 'Contact', url: '#', ref: 'aboutRef' }
+  { title: 'Skills', url: '#skills', ref: 'aboutRef' },
+  { title: 'Experience', url: '#experience', ref: 'aboutRef' },
+  { title: 'Education', url: '#education', ref: 'aboutRef' },
+  { title: 'Service', url: '#service', ref: 'aboutRef' },
+  { title: 'Contact', url: '#contact', ref: 'aboutRef' }
 ];
 
-const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+const showNavMenu = false;
+
+// const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+// const myRef = useRef(null);
+// const executeScroll = () => scrollToRef(myRef);
 
 const Navbar = () => {
   return (
@@ -24,9 +28,10 @@ const Navbar = () => {
           underline="none"
           key={section.title}
           variant="inherit"
-          // href={section.url}
+          href={section.url}
           className="toolbar-link"
-          onClick={section => scrollToRef(section.ref)}
+          // onClick={section => scrollToRef(section.ref)}
+          // onClick={executeScroll}
         >
           {section.title}
         </Link>

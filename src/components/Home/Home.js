@@ -6,7 +6,7 @@ const homeImage = require('../../assets/images/OBJECTS.png');
 
 const Home = () => {
   return (
-    <Grid container className="home" alignItems="center" alignContent="center">
+    <Grid container className="home" alignItems="center" alignContent="center" id="home">
       <Grid item xs={12}>
         <img className="home-image" src={homeImage} alt="a"></img>
         <div className="home-text-container">

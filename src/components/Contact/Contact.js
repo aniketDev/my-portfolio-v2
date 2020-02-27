@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
   return (
-    <Grid item container className="contact section">
+    <Grid item container className="contact section" id="contact">
       <Grid item xs={12} className="contact__heading">
         <h1>
           Contact

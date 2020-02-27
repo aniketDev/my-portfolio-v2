@@ -6,7 +6,7 @@ import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
 const Services = () => {
   return (
-    <Grid item container className="services section">
+    <Grid item container className="services section" id="service">
       <Grid item xs={12} className="section-heading">
         <h1>My Services</h1>
       </Grid>
