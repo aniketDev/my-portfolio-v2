@@ -8,7 +8,7 @@ const Timeline = ({ data }) => {
     <Grid item container xs={12} className="timeline-container">
       <Grid item xs={1}></Grid>
       <Grid item xs={3} className="timeline-header">
-        <Typography variant="h6" component="h4">
+        <Typography variant="h4" component="h4">
           {data.headerTitle}
         </Typography>
         <Typography variant="subtitle1" component="p">
@@ -24,7 +24,7 @@ const Timeline = ({ data }) => {
         </div>
       </Grid>
       <Grid item xs={6} className="timeline-content">
-        <Typography variant="h6" component="h4">
+        <Typography variant="h4" component="h4">
           {data.contentTitle}
         </Typography>
         <List className="paragraph">
@@ -34,11 +34,11 @@ const Timeline = ({ data }) => {
                 <ListItemIcon className="list-icon">
                   <FontAwesomeIcon className="icon" icon="angle-right" size="lg" />
                 </ListItemIcon>
-                <ListItemText primary={list} />
+                <ListItemText primary={list} className="list-item-text" />
               </ListItem>
             ))
           ) : (
-            <ListItemText primary={data.contentLists[0]} />
+            <ListItemText primary={data.contentLists[0]} className="list-item-text" />
           )}
         </List>
       </Grid>

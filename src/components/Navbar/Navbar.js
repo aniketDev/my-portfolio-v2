@@ -23,7 +23,7 @@ const Navbar = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   // const theme = useTheme();
   // const matches = useMediaQuery(theme.breakpoints.up('lg'));
-  const matches = useMediaQuery('(min-width:1080px)');
+  const matches = useMediaQuery('(min-width:1280px)');
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
@@ -39,9 +39,18 @@ const Navbar = () => {
         ''
       ) : (
         <div>
-          <Button aria-controls="nav-menu" aria-haspopup="true" onClick={handleClick}>
+          {/* <Button aria-controls="nav-menu" size="large" aria-haspopup="true" onClick={handleClick}>
             <FontAwesomeIcon className="icon" icon="bars" size="lg" />
-          </Button>
+          </Button> */}
+
+          <FontAwesomeIcon
+            className="icon"
+            icon="bars"
+            size="lg"
+            aria-controls="nav-menu"
+            aria-haspopup="true"
+            onClick={handleClick}
+          />
 
           <Menu
             id="nav-menu"

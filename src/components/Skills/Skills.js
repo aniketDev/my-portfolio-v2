@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Grid,
   Card,
@@ -9,9 +9,9 @@ import {
   Button,
   Typography,
   LinearProgress
-} from "@material-ui/core";
-import "./Skills.scss";
-import { cards } from "./SkillsData";
+} from '@material-ui/core';
+import './Skills.scss';
+import { cards } from './SkillsData';
 
 const Skills = () => {
   return (
@@ -25,23 +25,15 @@ const Skills = () => {
             <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={card.title}>
               <Card raised={true} className="card">
                 <CardActionArea>
-                  <CardMedia
-                    className="card__image"
-                    image={card.image}
-                    title={card.title}
-                  />
+                  <CardMedia className="card__image" image={card.image} title={card.title} />
                   <CardContent className="card__content">
-                    <Typography variant="h5">{card.title}</Typography>
+                    <Typography variant="h4">{card.title}</Typography>
                     <br />
-                    <LinearProgress
-                      variant="determinate"
-                      value={card.value}
-                      color="secondary"
-                    />
+                    <LinearProgress variant="determinate" value={card.value} color="secondary" />
                   </CardContent>
                 </CardActionArea>
                 <CardActions className="card__actions">
-                  <Button href={card.link} size="small" target="_blank">
+                  <Button href={card.link} size="large" target="_blank">
                     Learn More
                   </Button>
                 </CardActions>

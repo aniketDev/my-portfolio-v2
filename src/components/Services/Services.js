@@ -37,7 +37,7 @@ const Services = () => {
                   <img alt="" src={data.image} />
                 </div>
                 <div className="content">
-                  <Typography className="content__title" variant="h5" component="h5">
+                  <Typography className="content__title" variant="h4" component="h4">
                     {data.title}
                   </Typography>
                   <div className="content__text">{data.description}</div>

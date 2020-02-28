@@ -1,4 +1,4 @@
-@import "./assets/scss/variables";
+@import './assets/scss/variables';
 
 .App {
   .portfolio {
@@ -36,6 +36,10 @@
         padding: 1rem 3rem 3rem 3rem;
         display: flex;
         border-bottom: 0.1rem solid $color-teal;
+
+        @include respond-above(sm) {
+          padding: 0.5rem 2rem 2rem 2rem;
+        }
       }
     }
   }

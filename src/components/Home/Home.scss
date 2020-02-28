@@ -1,9 +1,13 @@
-@import "../../assets/scss/base";
+@import '../../assets/scss/base';
 
 .home {
   height: calc(100vh - #{$navbar-height});
   margin-top: $navbar-height;
   color: $color-foreground;
+
+  @include respond-below(lg) {
+    background-color: $color-background;
+  }
 
   .home-image {
     position: absolute;
@@ -40,7 +44,7 @@
 
     .home-button {
       // font-family: inherit;
-      font-size: 1rem;
+      font-size: 1.4rem;
       letter-spacing: 0.1rem;
       background: $color-teal;
       color: white;

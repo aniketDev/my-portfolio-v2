@@ -9,6 +9,10 @@
       font-family: inherit;
       color: $color-deep-orange;
     }
+
+    p {
+      @include font-size(section-content);
+    }
   }
 
   .timeline-icon {
@@ -64,12 +68,21 @@
         font-family: inherit;
         padding: 0;
         align-items: flex-start;
+        @include font-size(section-content);
 
         .list-icon {
           color: $color-deep-orange;
           min-width: 1rem;
           padding: 0.3rem 1rem 0.3rem 0;
         }
+
+        .list-item-text span {
+          @include font-size(section-content);
+        }
+      }
+
+      .list-item-text span {
+        @include font-size(section-content);
       }
     }
   }

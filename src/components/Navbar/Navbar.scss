@@ -6,7 +6,7 @@
   overflow-x: auto;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 500;
   position: fixed !important;
   height: $navbar-height;
@@ -14,6 +14,7 @@
   left: 0;
   right: 0;
   z-index: 999;
+  min-height: 3.5rem !important;
 
   .icon {
     color: white;
