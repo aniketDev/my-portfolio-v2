@@ -1,10 +1,10 @@
-@import '../../assets/scss/base';
+@import "../../assets/scss/base";
 
 .about {
   &__content {
     &__text {
       padding: 3rem;
-      font-size: 1.5rem;
+      @include font-size(section-content);
       text-align: justify;
       flex-direction: column;
       position: relative;
@@ -20,9 +20,9 @@
         // background-repeat: no-repeat;
 
         display: inline-block;
-        content: '\201C';
+        content: "\201C";
         clear: both;
-        font-size: 35rem;
+        @include font-size(about-quote-size);
         position: absolute;
         left: 0rem;
         top: -18%;
@@ -34,9 +34,9 @@
 
       &::after {
         display: inline-block;
-        content: '\201D';
+        content: "\201D";
         clear: both;
-        font-size: 35rem;
+        @include font-size(about-quote-size);
         position: absolute;
         right: 0rem;
         bottom: -18rem;
@@ -51,7 +51,7 @@
       }
 
       button.download {
-        font-size: 1.4rem;
+        @include font-size(section-content);
         font-weight: 600;
         letter-spacing: 0.1rem;
         color: $color-teal;
@@ -78,7 +78,7 @@
       height: 100%;
 
       .profile-image {
-        background-image: url('../../assets/images/profile-image1.jpg');
+        background-image: url("../../assets/images/profile-image1.jpg");
         background-color: $color-background;
         background-position: bottom;
         background-repeat: no-repeat;

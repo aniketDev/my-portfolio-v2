@@ -15,3 +15,55 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin font-size($el) {
+  @include respond-above(xs) {
+    @if $el == section-header {
+      font-size: 2.5rem;
+      letter-spacing: 0.5rem;
+    }
+    @if $el == section-subheader {
+      font-size: 5rem;
+    }
+    @if $el == section-content {
+      font-size: 1.4rem;
+    }
+    @if $el == about-quote-size {
+      font-size: 35rem;
+    }
+    @if $el == contact-heading {
+      font-size: 10rem;
+    }
+    @if $el == contact-subheading {
+      font-size: 4rem;
+    }
+    @if $el == home-content-size {
+      font-size: 3rem;
+    }
+  }
+
+  @include respond-above(lg) {
+    @if $el == section-header {
+      font-size: 7rem;
+      letter-spacing: 1.5rem;
+    }
+    @if $el == section-subheader {
+      font-size: 5rem;
+    }
+    @if $el == section-content {
+      font-size: 1.4rem;
+    }
+    @if $el == about-quote-size {
+      font-size: 35rem;
+    }
+    @if $el == contact-heading {
+      font-size: 10rem;
+    }
+    @if $el == contact-subheading {
+      font-size: 4rem;
+    }
+    @if $el == home-content-size {
+      font-size: 3rem;
+    }
+  }
+}

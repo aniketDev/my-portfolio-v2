@@ -1,4 +1,4 @@
-@import '../../assets/scss/base';
+@import "../../assets/scss/base";
 
 .home {
   height: calc(100vh - #{$navbar-height});
@@ -17,7 +17,7 @@
     padding-left: 5%;
 
     h1 {
-      font-size: 3rem;
+      @include font-size(home-content-size);
       letter-spacing: 0.3rem;
       margin-bottom: 1rem;
       display: inline-flex;
@@ -33,7 +33,7 @@
     }
 
     p {
-      font-size: 1.4rem;
+      @include font-size(section-content);
       letter-spacing: 0.1rem;
       color: white;
     }

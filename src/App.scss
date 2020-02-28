@@ -1,4 +1,4 @@
-@import './assets/scss/variables';
+@import "./assets/scss/variables";
 
 .App {
   .portfolio {
@@ -15,8 +15,7 @@
 
         h1 {
           color: #00968896;
-          font-size: 7rem;
-          letter-spacing: 1.5rem;
+          @include font-size(section-header);
           text-transform: uppercase;
 
           span {
@@ -27,7 +26,7 @@
             transition: all 0.2s;
 
             &:hover {
-              font-size: 5rem;
+              @include font-size(section-subheader);
             }
           }
         }
