@@ -24,7 +24,7 @@ const Services = () => {
       <Grid item container xs={12} className="section-content services__content" justify="center">
         <Grid item container xs={12} lg={10} xl={10} spacing={5}>
           {ServicesData.map(data => (
-            <Grid item xs={4} key={data.id} className="card">
+            <Grid item xs={12} md={4} key={data.id} className="card">
               <Link
                 color="textSecondary"
                 underline="none"

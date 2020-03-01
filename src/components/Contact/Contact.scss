@@ -1,13 +1,9 @@
-@import "../../assets/scss/variables";
+@import '../../assets/scss/variables';
 
 .contact {
   height: 95vh;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("../../assets/images/contact-bg.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/contact-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,6 +47,10 @@
         border-bottom: 0.5rem solid $color-teal;
         border-radius: 0.5rem;
 
+        @include respond-below(md) {
+          height: auto;
+        }
+
         &__icon {
           @include font-size(contact-subheading);
           color: $color-teal;
@@ -70,6 +70,10 @@
           padding: 2rem 1rem 1rem 1rem;
           color: $color-teal;
           word-break: break-all;
+
+          @include respond-below(md) {
+            padding: 1rem 0.5rem 0.5rem 0.5rem;
+          }
         }
       }
     }

@@ -53,7 +53,7 @@
 
   @include respond-above(sm) {
     @if $el == section-header {
-      font-size: 4rem;
+      font-size: 3rem;
       letter-spacing: 1rem;
     }
     @if $el == section-content {
@@ -66,10 +66,10 @@
       font-size: 25rem;
     }
     @if $el == contact-heading {
-      font-size: 7rem;
+      font-size: 6rem;
     }
     @if $el == contact-subheading {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     @if $el == home-heading {
       font-size: 2.5rem;

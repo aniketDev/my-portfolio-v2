@@ -5,6 +5,11 @@
     text-align: right;
     padding-top: 2.5rem;
 
+    @include respond-below(md) {
+      text-align: left;
+      padding-left: 2rem;
+    }
+
     h5 {
       font-family: inherit;
       color: $color-deep-orange;
@@ -50,6 +55,9 @@
   }
 
   .timeline-content {
+    @include respond-below(md) {
+      padding-left: 2rem;
+    }
     h5 {
       position: relative;
       padding-top: 2.5rem;

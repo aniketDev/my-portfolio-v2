@@ -28,6 +28,10 @@
         z-index: -1;
         color: #7a7b7c69;
 
+        @include respond-below(md) {
+          top: -10rem;
+        }
+
         @include respond-below(sm) {
           display: none;
         }
@@ -39,7 +43,7 @@
         clear: both;
         @include font-size(about-quote-size);
         position: absolute;
-        right: 0rem;
+        right: 0;
         bottom: -18rem;
         font-weight: 600;
         font-family: sans-serif;
@@ -51,6 +55,10 @@
         }
 
         @include respond-below(md) {
+          bottom: -13rem;
+        }
+
+        @include respond-below(sm) {
           display: none;
         }
       }
@@ -87,7 +95,11 @@
       height: 100%;
 
       @include respond-below(md) {
-        height: 90vh;
+        height: 70vh;
+        position: relative;
+        top: -3rem;
+        display: flex;
+        justify-content: center;
       }
 
       .profile-image {
@@ -101,6 +113,9 @@
         opacity: 1;
         // background-blend-mode: soft-light; // luminosity, overlay, difference
         // box-shadow: 20px 0 4rem 4rem $color-background inset;
+        @include respond-below(md) {
+          width: 50%;
+        }
       }
     }
   }

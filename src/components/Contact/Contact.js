@@ -17,7 +17,7 @@ const Contact = () => {
       <Grid item container xs={12} className="section-content contact__content" justify="center">
         <Grid item container xs={10} spacing={5}>
           {ContactData.map(data => (
-            <Grid item xs={4} key={data.id}>
+            <Grid item xs={12} md={4} key={data.id}>
               <Card raised={true} className="card">
                 <CardContent className="card__content">
                   <div className="card__content__icon">

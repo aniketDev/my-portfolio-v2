@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, useMediaQuery } from '@material-ui/core';
 import './About.scss';
 
 const About = () => {
@@ -7,6 +7,8 @@ const About = () => {
   const years = year - 2018;
   console.log(year);
   const months = new Date().getMonth() + 1;
+  const xs = useMediaQuery('(min-width: 0px)');
+  const md = useMediaQuery('(min-width:960px)');
 
   return (
     <Grid container className="about section" id="about">
@@ -18,6 +20,12 @@ const About = () => {
       </Grid>
 
       <Grid container item xs={12} className="about__content">
+        {xs ? (
+          <Grid item xs={12} lg={4} className="about__content__image">
+            <div className="profile-image"></div>
+          </Grid>
+        ) : null}
+
         <Grid item xs={12} lg={8} className="about__content__text">
           <Typography variant="inherit" component="p">
             Hi there! I'm Aniket Mandal. I'm a professional <strong>Front-end Developer</strong>{' '}
@@ -46,9 +54,11 @@ const About = () => {
 
           <button className="download">Download CV</button>
         </Grid>
-        <Grid item xs={12} lg={4} className="about__content__image">
-          <div className="profile-image"></div>
-        </Grid>
+        {md ? (
+          <Grid item xs={12} lg={4} className="about__content__image">
+            <div className="profile-image"></div>
+          </Grid>
+        ) : null}
       </Grid>
     </Grid>
   );
