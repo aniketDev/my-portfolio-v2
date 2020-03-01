@@ -1,8 +1,8 @@
-@import "../../assets/scss/media-queries";
-@import "../../assets/scss/mixins";
+@import '../../assets/scss/media-queries';
+@import '../../assets/scss/mixins';
 
 /* Image URLs */
-$home-image: url("/assets/images/header-image.jpg");
+$home-image: url('/assets/images/header-image.jpg');
 
 /* Color schemes */
 $color-nav-dark: #016b89;
@@ -34,13 +34,3 @@ $shadow: rgba(0, 0, 0, 0.4);
 
 /* Attribute properties */
 $navbar-height: 3rem;
-
-/* font sizes */
-
-// $section-header: 7rem;
-// $section-subheader: 5rem;
-// $section-content: 1.4rem;
-// $about-quote-size: 35rem;
-// $contact-heading: 10rem;
-// $contact-subheading: 4rem;
-// $home-content-size: 3rem;

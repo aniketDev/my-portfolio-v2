@@ -22,10 +22,10 @@
       font-size: 3rem;
       letter-spacing: 0.5rem;
     }
-    @if $el == section-subheader {
-      font-size: 6rem;
-    }
     @if $el == section-content {
+      font-size: 1.4rem;
+    }
+    @if $el == about-content {
       font-size: 1.6rem;
     }
     @if $el == about-quote-size {
@@ -37,20 +37,63 @@
     @if $el == contact-subheading {
       font-size: 5rem;
     }
-    @if $el == home-content-size {
+    @if $el == home-heading {
       font-size: 3rem;
+    }
+    @if $el == home-content {
+      font-size: 1.3rem;
+    }
+    @if $el == home-button {
+      font-size: 1.2rem;
+    }
+    @if $el == navbar {
+      font-size: 1.2rem;
     }
   }
 
   @include respond-above(lg) {
     @if $el == section-header {
+      font-size: 6rem;
+      letter-spacing: 1.3rem;
+    }
+    @if $el == section-content {
+      font-size: 1.1rem;
+    }
+    @if $el == about-content {
+      font-size: 1.3rem;
+    }
+    @if $el == about-quote-size {
+      font-size: 30rem;
+    }
+    @if $el == contact-heading {
+      font-size: 10rem;
+    }
+    @if $el == contact-subheading {
+      font-size: 4rem;
+    }
+    @if $el == home-heading {
+      font-size: 3rem;
+    }
+    @if $el == home-content {
+      font-size: 1.3rem;
+    }
+    @if $el == home-button {
+      font-size: 1.3rem;
+    }
+    @if $el == navbar {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include respond-above(xl) {
+    @if $el == section-header {
       font-size: 8rem;
       letter-spacing: 1.5rem;
     }
-    @if $el == section-subheader {
-      font-size: 6rem;
-    }
     @if $el == section-content {
+      font-size: 1.5rem;
+    }
+    @if $el == about-content {
       font-size: 1.6rem;
     }
     @if $el == about-quote-size {
@@ -62,8 +105,17 @@
     @if $el == contact-subheading {
       font-size: 5rem;
     }
-    @if $el == home-content-size {
+    @if $el == home-heading {
       font-size: 4rem;
+    }
+    @if $el == home-content {
+      font-size: 1.5rem;
+    }
+    @if $el == home-button {
+      font-size: 1.4rem;
+    }
+    @if $el == navbar {
+      font-size: 1.4rem;
     }
   }
 }

@@ -4,7 +4,7 @@
   &__content {
     &__text {
       padding: 3rem;
-      @include font-size(section-content);
+      @include font-size(about-content);
       text-align: justify;
       flex-direction: column;
       position: relative;

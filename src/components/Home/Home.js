@@ -4,7 +4,7 @@ import './Home.scss';
 
 const Home = () => {
   const homeImage = require('../../assets/images/OBJECTS.png');
-  const matches = useMediaQuery('(min-width:1200px)');
+  const matches = useMediaQuery('(min-width:1280px)');
 
   return (
     <Grid container className="home" alignItems="center" alignContent="center" id="home">
@@ -17,7 +17,7 @@ const Home = () => {
             <span>Aniket Mandal</span>
           </h1>
           <p>
-            I'm a frontend web developer currently based in Bangalore, <br />
+            I'm a Front-end Web Developer currently based in Bangalore, <br />
             focused on writing clean, elegant, efficient and functional code.
           </p>
           <Link href="#about" underline="none">

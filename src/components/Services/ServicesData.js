@@ -13,7 +13,7 @@ export const ServicesData = [
     url: 'https://en.wikipedia.org/wiki/Web_application_development',
     title: 'Web Application Design and Development',
     description:
-      'I can both design and develop dynamic web applications which are responsive, elegant and user-friendly using frontend frameworks like React js, Angular etc. I emphasize on minimal use of external libraries to boost the app performance.'
+      'I can both design and develop dynamic web applications which are responsive, elegant and user-friendly using front-end frameworks like React js, Angular etc. I emphasize on minimal use of external libraries to boost the app performance.'
   },
   {
     id: 3,

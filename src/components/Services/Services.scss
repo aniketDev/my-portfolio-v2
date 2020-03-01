@@ -58,6 +58,10 @@
           &__title {
             font-weight: bold;
             margin-bottom: 1rem;
+
+            @include respond-below(xl) {
+              font-size: 1.6rem;
+            }
           }
 
           &__text {

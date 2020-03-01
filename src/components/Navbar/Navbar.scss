@@ -6,7 +6,7 @@
   overflow-x: auto;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-size: 1.4rem;
+  @include font-size(navbar);
   font-weight: 500;
   position: fixed !important;
   height: $navbar-height;
