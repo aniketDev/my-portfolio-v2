@@ -28,7 +28,7 @@
         z-index: -1;
         color: #7a7b7c69;
 
-        @include respond-below(md) {
+        @include respond-below(sm) {
           display: none;
         }
       }
@@ -45,6 +45,10 @@
         font-family: sans-serif;
         z-index: -1;
         color: #7a7b7c69;
+
+        @include respond-below(lg) {
+          bottom: -10rem;
+        }
 
         @include respond-below(md) {
           display: none;

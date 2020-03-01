@@ -22,7 +22,7 @@ const Skills = () => {
       <Grid item container xs={12} className="section-content skills__content">
         <Grid item container spacing={5}>
           {cards.map(card => (
-            <Grid item xs={12} sm={6} md={4} lg={2} xl={2} key={card.title}>
+            <Grid item xs={6} sm={4} md={3} lg={2} xl={2} key={card.title}>
               <Card raised={true} className="card">
                 <CardActionArea>
                   <CardMedia className="card__image" image={card.image} title={card.title} />

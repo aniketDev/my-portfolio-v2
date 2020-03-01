@@ -51,7 +51,6 @@
 
   .timeline-content {
     h5 {
-      font-family: inherit;
       position: relative;
       padding-top: 2.5rem;
       color: $color-deep-orange;
@@ -60,12 +59,10 @@
     }
 
     ul {
-      font-family: inherit;
       padding: 1rem 0;
       text-align: justify;
 
       li {
-        font-family: inherit;
         padding: 0;
         align-items: flex-start;
         @include font-size(section-content);

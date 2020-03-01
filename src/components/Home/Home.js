@@ -3,14 +3,16 @@ import { Grid, Button, useMediaQuery, Link } from '@material-ui/core';
 import './Home.scss';
 
 const Home = () => {
-  const homeImage = require('../../assets/images/OBJECTS.png');
-  const matches = useMediaQuery('(min-width:1280px)');
+  const artwork = require('../../assets/images/artwork.png');
+  const art_1 = require('../../assets/images/art_paperplane.png');
+  const lg = useMediaQuery('(min-width:1280px)');
+  const md = useMediaQuery('(min-width:960px)');
 
   return (
     <Grid container className="home" alignItems="center" alignContent="center" id="home">
+      <img className="art1" src={art_1} alt="a"></img>
+      <img className="artwork" src={artwork} alt="a"></img>
       <Grid item xs={12}>
-        {matches ? <img className="home-image" src={homeImage} alt="a"></img> : null}
-
         <div className="home-text-container">
           <h1>
             <span>Hello, I am</span>

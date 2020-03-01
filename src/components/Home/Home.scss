@@ -5,16 +5,31 @@
   margin-top: $navbar-height;
   color: $color-foreground;
 
-  @include respond-below(lg) {
-    background-color: $color-background;
+  .art1 {
+    position: absolute;
+    top: 3rem;
+    left: 30%;
+    height: 3.5rem;
   }
 
-  .home-image {
+  .artwork {
     position: absolute;
-    top: $navbar-height;
-    width: 100%;
+    top: calc(#{$navbar-height} + 0%);
+    right: 0;
+    // width: 100%;
     height: calc(100vh - #{$navbar-height});
     z-index: -1;
+    background-color: $color-background;
+
+    @include respond-below(xl) {
+      top: calc(#{$navbar-height} + 10%);
+      width: 50%;
+    }
+
+    @include respond-below(lg) {
+      top: 30%;
+      right: 0;
+    }
   }
 
   .home-text-container {
@@ -39,7 +54,11 @@
     p {
       @include font-size(home-content);
       letter-spacing: 0.1rem;
-      // color: white;
+      font-weight: 500;
+
+      @include respond-below(xl) {
+        color: white;
+      }
     }
 
     .home-button {
