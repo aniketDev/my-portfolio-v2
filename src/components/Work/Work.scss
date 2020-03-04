@@ -23,5 +23,10 @@
       font-size: 2rem;
       padding: 0 2rem;
     }
+
+    @include respond-below(sm) {
+      font-size: 1.6rem;
+      padding: 0 1.5rem;
+    }
   }
 }

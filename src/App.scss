@@ -12,7 +12,7 @@
         justify-content: center;
         text-align: center;
         height: 20%;
-        padding: 3rem 0;
+        padding: 3rem 0.5rem;
 
         h1 {
           color: #00968896;
@@ -40,6 +40,10 @@
 
         @include respond-above(sm) {
           padding: 0.5rem 2rem 2rem 2rem;
+        }
+
+        @include respond-below(sm) {
+          padding: 2rem 0rem;
         }
       }
     }

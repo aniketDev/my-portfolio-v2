@@ -19,6 +19,10 @@
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.05);
 
+      @include respond-below(sm) {
+        letter-spacing: 0.5rem;
+      }
+
       span {
         @include font-size(contact-subheading);
         letter-spacing: 0.7rem;
@@ -29,6 +33,10 @@
         position: absolute;
         top: 31%;
         left: 0;
+
+        @include respond-below(sm) {
+          letter-spacing: 0.5rem;
+        }
       }
     }
   }

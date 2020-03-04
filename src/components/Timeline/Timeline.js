@@ -62,10 +62,10 @@ const Timeline = ({ data }) => {
         <Grid item xs={1}></Grid>
         <Grid item xs={1} className="timeline-icon">
           <div className="icon-container">
-            <FontAwesomeIcon className="icon" icon={data.icon} size="lg" />
+            <FontAwesomeIcon className="icon" icon={data.icon} size="md" />
           </div>
         </Grid>
-        <Grid item container xs={10}>
+        <Grid item container xs={9}>
           <Grid item xs={12} className="timeline-header">
             <Typography variant="h5" component="h5">
               {data.headerTitle}
@@ -77,6 +77,7 @@ const Timeline = ({ data }) => {
               {data.headerSubtitle2}
             </Typography>
           </Grid>
+          <Grid item xs={1}></Grid>
 
           <Grid item xs={12} className="timeline-content">
             <Typography variant="h5" component="h5">

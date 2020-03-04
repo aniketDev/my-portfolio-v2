@@ -1,26 +1,50 @@
-@import '../../assets/scss/variables';
+@import '../../assets/scss/base';
 
 .skills {
   &__content {
-    .card {
-      background-color: lighten($color: $color-background, $amount: 10);
-      color: $color-foreground;
-
-      &__image {
-        height: 5rem;
-        background-size: contain;
+    @include respond-below(sm) {
+      padding: 1.7rem !important;
+    }
+    .card-container {
+      @include respond-below(sm) {
+        padding: 0.7rem !important;
       }
 
-      &__content {
-        text-align: center;
-      }
+      .card {
+        background-color: lighten($color: $color-background, $amount: 10);
+        color: $color-foreground;
 
-      &__actions {
-        display: flex;
-        justify-content: center;
+        &__image {
+          height: 5rem;
+          background-size: contain;
+        }
 
-        a {
-          color: $color-foreground;
+        &__content {
+          text-align: center;
+
+          @include respond-below(sm) {
+            h5 {
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        &__actions {
+          display: flex;
+          justify-content: center;
+
+          @include respond-below(sm) {
+            font-size: 1rem;
+          }
+
+          a {
+            color: $color-foreground;
+          }
+
+          span {
+            font-size: 1rem;
+            text-transform: initial;
+          }
         }
       }
     }

@@ -13,6 +13,10 @@
     h5 {
       font-family: inherit;
       color: $color-deep-orange;
+
+      @include respond-below(md) {
+        font-size: 1.3rem;
+      }
     }
 
     p {
@@ -44,6 +48,11 @@
       position: relative;
       margin-top: 2rem;
 
+      @include respond-below(sm) {
+        width: 2rem;
+        height: 2rem;
+      }
+
       .icon {
         color: white;
         position: absolute;
@@ -64,6 +73,11 @@
       color: $color-deep-orange;
       border-bottom: 0.2rem solid $color-red;
       display: inline-block;
+
+      @include respond-below(md) {
+        padding-top: 2rem;
+        font-size: 1.3rem;
+      }
     }
 
     ul {
