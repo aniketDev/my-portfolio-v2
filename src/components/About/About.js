@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Grid, Typography, useMediaQuery } from '@material-ui/core';
+import { Grid, Typography, useMediaQuery, Link } from '@material-ui/core';
 import './About.scss';
 
 const About = () => {
@@ -28,8 +28,8 @@ const About = () => {
 
         <Grid item xs={12} md={8} lg={8} className="about__content__text">
           <Typography variant="inherit" component="p">
-            Hi there! I'm Aniket Mandal. I'm a professional <strong>Front-end Developer</strong>{' '}
-            with
+            Hi there! My name is Aniket Mandal. I'm a professional
+            <strong>&nbsp;Front-end Developer</strong>&nbsp;with
             <strong>{` ${years}.${months} years `}</strong>
             of professional experience.
           </Typography>
@@ -45,14 +45,21 @@ const About = () => {
             different domains and started working in Primesoft IP Solutions Pvt. Ltd. as a Software
             Engineer. I'm currently working in this organization for almost 1 year. During this time
             period I've worked there in a banking project and other projects using various tools and
-            technologies like Angular 5, Ionic 3, React js and Backbone js.
+            technologies like Angular 5, Ionic 3, React js.
           </Typography>
           <Typography variant="inherit" component="p">
             I try to learn new things each and every day and I feel a day without learning something
             new is a day wasted.
           </Typography>
 
-          <button className="download">Download CV</button>
+          <button className="download">
+            <Link
+              href="https://drive.google.com/file/d/1tvZO82WIk24I-bDuqSs9LAt6cS6trUcR/view?usp=sharing"
+              target="_blank"
+            >
+              Download CV
+            </Link>
+          </button>
         </Grid>
         {md ? (
           <Grid item xs={12} md={4} lg={4} className="about__content__image">

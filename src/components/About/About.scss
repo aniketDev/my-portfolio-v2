@@ -81,11 +81,16 @@
         background: transparent;
         cursor: pointer;
         margin-top: 2rem;
+        outline: none;
 
         &:hover {
           box-shadow: rgba(0, 0, 0, 0.4);
           background: $color-teal;
           color: #fff;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
         }
       }
     }
