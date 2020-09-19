@@ -1,7 +1,18 @@
 [
   {
     "headerTitle": "Software Engineer",
-    "headerSubtitle1": "March 2018 - Present",
+    "headerSubtitle1": "March 2020 - Present",
+    "headerSubtitle2": "6 Months",
+    "icon": "briefcase",
+    "contentTitle": "Valtech India Systems Pvt. Ltd., Bangalore",
+    "contentLists": [
+      "Developing ZEE5 PWA using React & Redux.",
+      "Fixing bug and implementing new features as part of ZEE5 web app project"
+    ]
+  },
+  {
+    "headerTitle": "Software Engineer",
+    "headerSubtitle1": "March 2019 - Feb 2020",
     "headerSubtitle2": "11 Months",
     "icon": "briefcase",
     "contentTitle": "PrimeSoft IP Solutions Pvt. Ltd., Bangalore",
