@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Grid, Typography, useMediaQuery, Link } from '@material-ui/core';
 import './About.scss';
 

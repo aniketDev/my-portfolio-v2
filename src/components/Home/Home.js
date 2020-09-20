@@ -5,11 +5,17 @@ import './Home.scss';
 const Home = () => {
   const artwork = require('../../assets/images/artwork.png');
   const art_1 = require('../../assets/images/art_paperplane.png');
-  const lg = useMediaQuery('(min-width:1280px)');
-  const md = useMediaQuery('(min-width:960px)');
+  // const lg = useMediaQuery('(min-width:1280px)');
+  // const md = useMediaQuery('(min-width:960px)');
 
   return (
-    <Grid container className="home" alignItems="center" alignContent="center" id="home">
+    <Grid
+      container
+      className="home"
+      alignItems="center"
+      alignContent="center"
+      id="home"
+    >
       <img className="art1" src={art_1} alt="a"></img>
       <img className="artwork" src={artwork} alt="a"></img>
       <Grid item xs={12}>

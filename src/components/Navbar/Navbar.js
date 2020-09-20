@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
-import { Toolbar, Link, Button, Menu, MenuItem } from '@material-ui/core';
+import { Toolbar, Link, Menu, MenuItem } from '@material-ui/core';
 // import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,7 +25,7 @@ const Navbar = () => {
   // const matches = useMediaQuery(theme.breakpoints.up('lg'));
   const matches = useMediaQuery('(min-width:1280px)');
 
-  const handleClick = event => {
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -59,7 +59,7 @@ const Navbar = () => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            {sections.map(section => (
+            {sections.map((section) => (
               <MenuItem key={section.url}>
                 <Link
                   color="textSecondary"
@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {sections.map(section => (
+      {sections.map((section) => (
         <Link
           color="textSecondary"
           noWrap
