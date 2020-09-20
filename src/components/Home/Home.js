@@ -25,8 +25,9 @@ const Home = () => {
             <span>Aniket Mandal</span>
           </h1>
           <p>
-            I'm a Front-end Web Developer currently based in Bangalore, <br />
-            focused on writing clean, elegant, efficient and functional code.
+            I'm a Front-end Web & Mobile Developer currently based in Bangalore,{' '}
+            <br />
+            focused on writing clean, optimized, efficient and functional code.
           </p>
           <Link href="#about" underline="none">
             <Button size="large" variant="contained" className="home-button">
