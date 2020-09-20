@@ -44,7 +44,7 @@ const Skills = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions className="card__actions">
-                  <Button href={card.link} size="large" target="_blank">
+                  <Button href={card.link} size="large" target="_blank" rel="noreferrer">
                     <span>Learn More</span>
                   </Button>
                 </CardActions>

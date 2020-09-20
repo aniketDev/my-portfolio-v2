@@ -32,6 +32,7 @@ const Services = () => {
                 href={data.url}
                 className="card__link"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="icon">
                   <img alt="" src={data.image} />

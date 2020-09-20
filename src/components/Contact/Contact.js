@@ -33,7 +33,7 @@ const Contact = () => {
 
         <Grid item container xs={6} className="contact__content__footer" justify="center">
           <Grid item xs={3}>
-            <Link noWrap target="_blank" underline="none" href="https://github.com/aniketDev/">
+            <Link noWrap target="_blank" rel="noreferrer" underline="none" href="https://github.com/aniketDev/">
               <FontAwesomeIcon className="icon" icon={['fab', 'github-square']} />
             </Link>
           </Grid>
@@ -41,6 +41,7 @@ const Contact = () => {
             <Link
               noWrap
               target="_blank"
+              rel="noreferrer"
               underline="none"
               href="https://www.linkedin.com/in/aniketmandal9/"
             >
@@ -51,6 +52,7 @@ const Contact = () => {
             <Link
               noWrap
               target="_blank"
+              rel="noreferrer"
               underline="none"
               href="https://www.hackerrank.com/aniketmandal9"
             >
@@ -58,7 +60,7 @@ const Contact = () => {
             </Link>
           </Grid>
           <Grid item xs={3}>
-            <Link noWrap target="_blank" underline="none" href="https://codepen.io/aniketDev/">
+            <Link noWrap target="_blank" rel="noreferrer" underline="none" href="https://codepen.io/aniketDev/">
               <FontAwesomeIcon className="icon" icon={['fab', 'codepen']} />
             </Link>
           </Grid>
