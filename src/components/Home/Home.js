@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Button, useMediaQuery, Link } from '@material-ui/core';
+import { Grid, Button, Link } from '@material-ui/core';
 import './Home.scss';
 
 const Home = () => {
