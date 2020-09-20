@@ -31,7 +31,7 @@ export const cards = [
   },
   {
     title: 'Redux',
-    image: require('../../assets/images/logo/redux.png'),
+    image: require('../../assets/images/logo/redux.webp'),
     value: 80,
     link: 'https://redux.js.org/'
   },
@@ -55,7 +55,7 @@ export const cards = [
   },
   {
     title: 'Bootstrap',
-    image: require('../../assets/images/logo/bs.png'),
+    image: require('../../assets/images/logo/bs.webp'),
     value: 80,
     link: 'https://getbootstrap.com/'
   },
@@ -87,7 +87,8 @@ export const cards = [
     title: 'Spring',
     image: require('../../assets/images/logo/spring.png'),
     value: 60,
-    link: 'https://docs.spring.io/spring/docs/current/spring-framework-reference/'
+    link:
+      'https://docs.spring.io/spring/docs/current/spring-framework-reference/'
   },
   {
     title: 'Maven',

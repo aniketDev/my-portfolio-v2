@@ -3,7 +3,7 @@ import { Grid, Button, Link } from '@material-ui/core';
 import './Home.scss';
 
 const Home = () => {
-  const artwork = require('../../assets/images/artwork.png');
+  const artwork = require('../../assets/images/artwork.webp');
   const art_1 = require('../../assets/images/art_paperplane.png');
   // const lg = useMediaQuery('(min-width:1280px)');
   // const md = useMediaQuery('(min-width:960px)');
