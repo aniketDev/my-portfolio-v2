@@ -9,7 +9,7 @@ export const ServicesData = [
   },
   {
     id: 2,
-    image: require('../../assets/images/webapp-dev.jpg'),
+    image: require('../../assets/images/webapp-dev.png'),
     url: 'https://en.wikipedia.org/wiki/Web_application_development',
     title: 'Web Application Design and Development',
     description:
