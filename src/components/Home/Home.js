@@ -1,10 +1,10 @@
 import React from 'react';
 import { Grid, Button, Link } from '@material-ui/core';
 import './Home.scss';
+import artwork from '../../assets/images/artwork.webp';
+import art_1 from '../../assets/images/art_paperplane.png';
 
 const Home = () => {
-  const artwork = require('../../assets/images/artwork.webp');
-  const art_1 = require('../../assets/images/art_paperplane.png');
   // const lg = useMediaQuery('(min-width:1280px)');
   // const md = useMediaQuery('(min-width:960px)');
 
