@@ -1,11 +1,11 @@
 @import '../../assets/scss/base';
 
 .toolbar-container {
-  background-image: linear-gradient(to left, $color-nav-dark, $color-nav-light);
-  justify-content: space-between;
+  background-color: $color-teal;
+  justify-content: flex-start;
   overflow-x: auto;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   @include font-size(navbar);
   font-weight: 500;
   position: fixed !important;
@@ -24,7 +24,10 @@
     flex-shrink: 0;
     padding: 0 1rem;
     cursor: pointer;
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0.9) 60%,
+      rgba(255, 255, 255, 0) 100%
+    );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 

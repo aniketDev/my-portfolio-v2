@@ -6,7 +6,7 @@ const About = () => {
   const years = new Date().getFullYear() - 2018;
   const months = new Date().getMonth() + 1;
   const xs = useMediaQuery('(max-width: 959px)');
-  const md = useMediaQuery('(min-width:960px)');
+  const md = useMediaQuery('(min-width: 960px)');
 
   return (
     <Grid container className="about section" id="about">
@@ -27,9 +27,9 @@ const About = () => {
         <Grid item xs={12} md={8} lg={8} className="about__content__text">
           <Typography variant="inherit" component="p">
             Hi there! My name is Aniket Mandal. I'm a professional
-            <strong>&nbsp;Front-end Developer</strong>&nbsp;with
-            <strong>{` ${years}.${months} years `}</strong>
-            of professional experience.
+            <strong>&nbsp;Front-end Developer</strong>&nbsp;with&nbsp;
+            <strong>{`${years} years and ${months} ${months > 1 ? "months" : "month"}`}</strong>
+            &nbsp;of professional experience.
           </Typography>
           <Typography variant="inherit" component="p">
             After passing my M.Tech I started my job as a Project Coordinator in

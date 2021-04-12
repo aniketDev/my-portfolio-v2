@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import './Experience.scss';
 import Timeline from '../Timeline/Timeline';
-import experienceData from './experience.json';
+import { experienceData } from './experienceData';
 
 const Experience = () => {
   return (
@@ -12,7 +12,7 @@ const Experience = () => {
       </Grid>
       <Grid item container xs={12} className="section-content experience__content">
         {experienceData.map(data => (
-          <Timeline key={data.headerTitle} data={data} />
+          <Timeline key={data.contentTitle} data={data} />
         ))}
       </Grid>
     </Grid>

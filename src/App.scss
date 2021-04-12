@@ -15,7 +15,8 @@
         padding: 3rem 0.5rem;
 
         h1 {
-          color: #00968896;
+          // color: #00968896;
+          color: $color-section-header;
           @include font-size(section-header);
           text-transform: uppercase;
 

@@ -21,11 +21,13 @@ const Home = () => {
       <Grid item xs={12}>
         <div className="home-text-container">
           <h1>
-            <span>Hello, I am</span>
+            <span>Hello,</span>
+            <br />
+            <span>I am </span>
             <span>Aniket Mandal</span>
           </h1>
           <p>
-            I'm a Front-end Web & Mobile Developer currently based in Bangalore,{' '}
+            I'm a Front-end Web & Mobile Developer currently based in Bangalore,
             <br />
             focused on writing clean, optimized, efficient and functional code.
           </p>
