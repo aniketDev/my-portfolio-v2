@@ -1,99 +1,102 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.scss';
-import { Toolbar, Link, Menu, MenuItem } from '@material-ui/core';
-// import { useTheme } from '@material-ui/core/styles';
+import {
+  Toolbar,
+  Link,
+  Drawer,
+  AppBar,
+  IconButton,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Icon
+} from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const sections = [
-  { title: 'Home', url: '#home', ref: 'aboutRef' },
-  { title: 'About', url: '#about', ref: 'aboutRef' },
-  { title: 'Skills', url: '#skills', ref: 'aboutRef' },
-  { title: 'Experience', url: '#experience', ref: 'aboutRef' },
-  { title: 'Education', url: '#education', ref: 'aboutRef' },
-  { title: 'Service', url: '#service', ref: 'aboutRef' },
-  { title: 'Contact', url: '#contact', ref: 'aboutRef' }
+  { title: 'Home', url: '#home', icon: 'home_rounded' },
+  { title: 'About', url: '#about', icon: 'info_rounded' },
+  { title: 'Skills', url: '#skills', icon: 'code_rounded' },
+  { title: 'Experience', url: '#experience', icon: 'list_alt_rounded' },
+  { title: 'Education', url: '#education', icon: 'school_rounded' },
+  { title: 'Service', url: '#service', icon: 'dvr_rounded' },
+  { title: 'Contact', url: '#contact', icon: 'contact_mail_rounded' }
 ];
 
-// const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
-// const myRef = useRef(null);
-// const executeScroll = () => scrollToRef(myRef);
-
 const Navbar = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  // const theme = useTheme();
-  // const matches = useMediaQuery(theme.breakpoints.up('lg'));
-  const matches = useMediaQuery('(min-width:1280px)');
+  const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useMediaQuery('(max-width:599px)');
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+  const toggleDrawer = event => {
+    if (event.type === 'keydown' && event.key !== 'Enter') {
+      return;
+    }
+    setIsOpen(!isOpen);
   };
 
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const renderMenuItems = () => (
+    <div className="drawerContent" role="presentation" onClick={e => toggleDrawer(e)} onKeyDown={e => toggleDrawer(e)}>
+      <List>
+        {sections.map(section => (
+          <Link key={section.title} noWrap underline="none" variant="inherit" href={section.url}>
+            <ListItem button={true}>
+              <ListItemIcon>
+                <Icon fontSize="small">{section.icon}</Icon>
+              </ListItemIcon>
+              <ListItemText primary={section.title} />
+            </ListItem>
+          </Link>
+        ))}
+      </List>
+    </div>
+  );
 
   return (
-    <Toolbar component="nav" variant="dense" className="toolbar-container">
-      {matches ? (
-        ''
-      ) : (
-        <div>
-          {/* <Button aria-controls="nav-menu" size="large" aria-haspopup="true" onClick={handleClick}>
-            <FontAwesomeIcon className="icon" icon="bars" size="lg" />
-          </Button> */}
-
-          <FontAwesomeIcon
-            className="icon"
-            icon="bars"
-            size="lg"
-            aria-controls="nav-menu"
-            aria-haspopup="true"
-            onClick={handleClick}
-          />
-
-          <Menu
-            id="nav-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            {sections.map((section) => (
-              <MenuItem key={section.url}>
+    <React.Fragment>
+      <AppBar position="fixed" color="secondary" className="NavbarContainer">
+        <Toolbar component="nav" variant="dense">
+          {isMobile ? (
+            <React.Fragment>
+              <IconButton
+                edge="start"
+                className="menuButton"
+                color="inherit"
+                aria-label="menu"
+                onClick={e => toggleDrawer(e)}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Drawer
+                transitionDuration={{ enter: 500, exit: 200 }}
+                anchor="left"
+                open={isOpen}
+                onClose={e => toggleDrawer(e)}
+                children={renderMenuItems()}
+                className="drawerContainer"
+              />
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              {sections.map(section => (
                 <Link
                   color="textSecondary"
                   noWrap
                   underline="none"
+                  key={section.title}
                   variant="inherit"
                   href={section.url}
                   className="toolbar-link"
-                  onClick={handleClose}
                 >
                   {section.title}
                 </Link>
-              </MenuItem>
-            ))}
-          </Menu>
-        </div>
-      )}
-
-      {sections.map((section) => (
-        <Link
-          color="textSecondary"
-          noWrap
-          underline="none"
-          key={section.title}
-          variant="inherit"
-          href={section.url}
-          className="toolbar-link"
-          // onClick={section => scrollToRef(section.ref)}
-          // onClick={executeScroll}
-        >
-          {matches ? section.title : ''}
-        </Link>
-      ))}
-    </Toolbar>
+              ))}
+            </React.Fragment>
+          )}
+        </Toolbar>
+      </AppBar>
+    </React.Fragment>
   );
 };
 

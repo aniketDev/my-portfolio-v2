@@ -1,9 +1,6 @@
 {
-  "cSpell.words": [
-    "Balihans",
-    "Innova",
-    "Primesoft",
-    "Qnabu",
-    "Servlet"
-  ]
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 120
 }
