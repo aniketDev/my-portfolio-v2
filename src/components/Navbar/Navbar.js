@@ -14,6 +14,7 @@ import {
 } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import MenuIcon from '@material-ui/icons/Menu';
+import { isMobile } from '../../utils/deviceInformation';
 
 const sections = [
   { title: 'Home', url: '#home', icon: 'home_rounded' },
@@ -27,7 +28,7 @@ const sections = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isMobile = useMediaQuery('(max-width:599px)');
+  const mobileWidth = useMediaQuery('(max-width:599px)');
 
   const toggleDrawer = event => {
     if (event.type === 'keydown' && event.key !== 'Enter') {
@@ -55,29 +56,29 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <AppBar position="fixed" color="secondary" className="NavbarContainer">
-        <Toolbar component="nav" variant="dense">
-          {isMobile ? (
-            <React.Fragment>
-              <IconButton
-                edge="start"
-                className="menuButton"
-                color="inherit"
-                aria-label="menu"
-                onClick={e => toggleDrawer(e)}
-              >
-                <MenuIcon />
-              </IconButton>
-              <Drawer
-                transitionDuration={{ enter: 500, exit: 200 }}
-                anchor="left"
-                open={isOpen}
-                onClose={e => toggleDrawer(e)}
-                children={renderMenuItems()}
-                className="drawerContainer"
-              />
-            </React.Fragment>
-          ) : (
+      {isMobile || mobileWidth ? (
+        <div className="NavContainerMobile">
+          <IconButton
+            // edge="start"
+            className="menuButton"
+            color="inherit"
+            aria-label="menu"
+            onClick={e => toggleDrawer(e)}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Drawer
+            transitionDuration={{ enter: 500, exit: 200 }}
+            anchor="left"
+            open={isOpen}
+            onClose={e => toggleDrawer(e)}
+            children={renderMenuItems()}
+            className="drawerContainer"
+          />
+        </div>
+      ) : (
+        <AppBar position="fixed" color="secondary" className="NavbarContainer">
+          <Toolbar component="nav" variant="dense">
             <React.Fragment>
               {sections.map(section => (
                 <Link
@@ -93,9 +94,9 @@ const Navbar = () => {
                 </Link>
               ))}
             </React.Fragment>
-          )}
-        </Toolbar>
-      </AppBar>
+          </Toolbar>
+        </AppBar>
+      )}
     </React.Fragment>
   );
 };

@@ -2,24 +2,39 @@
 
 .home {
   height: calc(100vh - #{$navbar-height});
-  margin-top: $navbar-height;
   color: $color-foreground;
 
+  @include respond-above(sm) {
+    margin-top: $navbar-height;
+  }
+
   .art1 {
-    position: absolute;
-    top: 3rem;
-    left: 30%;
-    height: 3.5rem;
+    display: none;
+    @include respond-above(sm) {
+      display: block;
+      position: absolute;
+      top: 3rem;
+      left: 30%;
+      height: 3.5rem;
+    }
   }
 
   .artwork {
+    display: none;
     position: absolute;
     top: calc(#{$navbar-height} + 0%);
     right: 0;
-    // width: 100%;
     height: calc(100vh - #{$navbar-height});
     z-index: -1;
     background-color: $color-background;
+
+    @include respond-above(sm) {
+      display: block;
+      top: 60%;
+      right: 0;
+      width: 90%;
+      height: 40%;
+    }
 
     @include respond-below(xl) {
       top: calc(#{$navbar-height} + 10%);
@@ -38,51 +53,71 @@
       width: 70%;
       height: 50%;
     }
-
-    @include respond-below(sm) {
-      top: 60%;
-      right: 0;
-      width: 90%;
-      height: 40%;
-    }
   }
 
   .home-text-container {
-    padding-left: 5%;
+    padding: 3rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
 
-    h1 {
+    .introName {
       @include font-size(home-heading);
-      letter-spacing: 0.3rem;
-      margin-bottom: 1rem;
-      flex-flow: column;
+      letter-spacing: 0.1rem;
 
       span {
         &:last-child {
-          margin-top: 1rem;
-          text-transform: uppercase;
+          // text-transform: uppercase;
           color: $color-teal;
+          padding: 0 10px;
+        }
+      }
+      .nameWrapper {
+        display: flex;
+        align-items: center;
+        &::before {
+          content: '';
+          background-image: url('../../assets/images/code-tag-open.svg');
+          background-repeat: no-repeat;
+          height: 2rem;
+          width: 2rem;
+          display: block;
+          // filter: invert(0.5) sepia(0.5) saturate(5) hue-rotate(308deg);
+          filter: invert(0.3);
+        }
+        &::after {
+          content: '';
+          background-image: url('../../assets/images/code-tag-close.svg');
+          background-repeat: no-repeat;
+          height: 3rem;
+          width: 3rem;
+          display: block;
+          filter: invert(0.3);
         }
       }
     }
 
     p {
       @include font-size(home-content);
-      letter-spacing: 0.1rem;
-      font-weight: 500;
+      color: white;
 
-      @include respond-below(xl) {
-        color: white;
-        font-weight: 400;
+      @include respond-above(sm) {
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+      }
+      span {
+        font-size: 1.5rem;
+        color: $color-teal;
       }
     }
 
     .home-button {
-      // font-family: inherit;
       @include font-size(home-button);
       letter-spacing: 0.1rem;
       background: $color-teal;
       color: white;
-      margin-top: 2rem;
+      text-transform: capitalize;
     }
   }
 }

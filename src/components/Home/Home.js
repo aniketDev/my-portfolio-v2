@@ -3,31 +3,31 @@ import { Grid, Button, Link } from '@material-ui/core';
 import './Home.scss';
 import artwork from '../../assets/images/artwork.webp';
 import art_1 from '../../assets/images/art_paperplane.png';
+import code_tag_open from '../../assets/images/code-tag-open.svg';
+import code_tag_close from '../../assets/images/code-tag-close.svg';
 
 const Home = () => {
-  // const lg = useMediaQuery('(min-width:1280px)');
-  // const md = useMediaQuery('(min-width:960px)');
-
   return (
-    <Grid
-      container
-      className="home"
-      alignItems="center"
-      alignContent="center"
-      id="home"
-    >
+    <Grid container className="home" id="home">
       <img className="art1" src={art_1} alt="a"></img>
       <img className="artwork" src={artwork} alt="a"></img>
       <Grid item xs={12}>
         <div className="home-text-container">
-          <h1>
-            <span>Hello,</span>
-            <br />
-            <span>I am </span>
-            <span>Aniket Mandal</span>
-          </h1>
+          <div className="introName">
+            <span>Hello, </span>
+            {/* <br /> */}
+            <span>I'm </span>
+            {/* <div className="nameWrapper">
+              <img src={code_tag_open} alt="code-tag-open" />
+              <span>Aniket Mandal</span>
+              <img src={code_tag_close} alt="code-tag-close" />
+            </div> */}
+            <div className="nameWrapper">
+              <span>Aniket Mandal</span>
+            </div>
+          </div>
           <p>
-            I'm a Front-end Web & Mobile Developer currently based in Bangalore,
+            I'm a <span>Front-end Web & Mobile Developer</span> currently based in Bangalore,
             <br />
             focused on writing clean, optimized, efficient and functional code.
           </p>

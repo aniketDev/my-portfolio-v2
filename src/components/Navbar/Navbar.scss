@@ -5,7 +5,12 @@
     background-color: $color-teal;
   }
 
+  @include respond-above(xs) {
+    display: none;
+  }
+
   @include respond-above(sm) {
+    display: block;
     align-items: center;
     overflow-x: hidden;
     letter-spacing: 0.03rem;
@@ -53,5 +58,16 @@
         color: $color-foreground;
       }
     }
+  }
+}
+
+.NavContainerMobile {
+  .menuButton {
+    position: fixed;
+    border-radius: 5px;
+    margin: 10px 0 0 10px;
+    background-color: teal;
+    color: $color-nav-text;
+    z-index: 10;
   }
 }
