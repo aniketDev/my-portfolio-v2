@@ -3,8 +3,6 @@ import { Grid, Button, Link } from '@material-ui/core';
 import './Home.scss';
 import artwork from '../../assets/images/artwork.webp';
 import art_1 from '../../assets/images/art_paperplane.png';
-import code_tag_open from '../../assets/images/code-tag-open.svg';
-import code_tag_close from '../../assets/images/code-tag-close.svg';
 
 const Home = () => {
   return (

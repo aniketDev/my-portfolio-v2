@@ -21,7 +21,7 @@
       flex-shrink: 0;
       padding: 0 0.5rem;
       cursor: pointer;
-      color: $color-nav-text;
+      color: $color-white;
       // background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
       // -webkit-text-fill-color: transparent;
       // -webkit-background-clip: text;
@@ -67,7 +67,7 @@
     border-radius: 5px;
     margin: 10px 0 0 10px;
     background-color: teal;
-    color: $color-nav-text;
+    color: $color-white;
     z-index: 10;
   }
 }

@@ -100,8 +100,7 @@ export const cards = [
     title: 'Spring',
     image: spring,
     value: 60,
-    link:
-      'https://docs.spring.io/spring/docs/current/spring-framework-reference/'
+    link: 'https://docs.spring.io/spring/docs/current/spring-framework-reference/'
   },
   {
     title: 'Maven',

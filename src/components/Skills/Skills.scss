@@ -2,29 +2,35 @@
 
 .skills {
   &__content {
-    @include respond-below(sm) {
-      padding: 1.7rem !important;
+    padding: 2rem;
+    @include respond-above(sm) {
     }
-    .card-container {
-      @include respond-below(sm) {
-        padding: 0.7rem !important;
+    .card-container.MuiGrid-item {
+      padding: 7px;
+      @include respond-above(sm) {
       }
 
       .card {
         background-color: lighten($color: $color-background, $amount: 10);
         color: $color-foreground;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &__image {
-          height: 5rem;
+          height: 3rem;
           background-size: contain;
         }
 
         &__content {
           text-align: center;
-
-          @include respond-below(sm) {
-            h5 {
-              font-size: 1.2rem;
+          padding: 8px;
+          h5 {
+            font-size: 1rem;
+            padding-bottom: 8px;
+            @include respond-above(sm) {
+              // padding: 16px;
             }
           }
         }
@@ -33,17 +39,13 @@
           display: flex;
           justify-content: center;
 
-          @include respond-below(sm) {
-            font-size: 1rem;
-          }
-
-          a {
+          &--button {
             color: $color-foreground;
-          }
-
-          span {
-            font-size: 1rem;
-            text-transform: initial;
+            padding: 0;
+            span {
+              font-size: 0.8rem;
+              text-transform: initial;
+            }
           }
         }
       }

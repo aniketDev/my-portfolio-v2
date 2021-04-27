@@ -8,7 +8,8 @@ $home-image: url('/assets/images/header-image.jpg');
 $color-nav-dark: #016b89;
 $color-nav-light: #0d9f90;
 $color-background: rgb(38, 50, 56);
-$color-foreground: rgb(176, 190, 197);
+// $color-foreground: rgb(176, 190, 197);
+$color-foreground: #ffffffd9;
 $color-yellow: #ffeb3b;
 $color-red: #f44336;
 $color-pink: #582737;
@@ -32,7 +33,8 @@ $color-blue-grey: #607d8b;
 $color-yellow-light: lighten($color-yellow, 40%);
 $color-section-header: #02d5b0;
 $shadow: rgba(0, 0, 0, 0.4);
-$color-nav-text: #ffffff;
+$color-white: #ffffff;
+$color-about-text: #ffffffd9;
 
 /* Attribute properties */
 $navbar-height: 3rem;

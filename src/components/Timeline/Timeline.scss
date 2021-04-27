@@ -2,20 +2,23 @@
 
 .timeline-container {
   .timeline-header {
-    text-align: right;
-    padding-top: 2.5rem;
+    text-align: left;
+    padding: 2rem 0 0 1.5rem;
+    // padding: 1rem 0 1rem 0.7rem;
+    // margin: 1rem 0 0 0.7rem;
+    // background-color: rgba(0, 0, 0, 0.5);
 
-    @include respond-below(md) {
-      text-align: left;
-      padding-left: 2rem;
+    @include respond-above(md) {
+      text-align: right;
+      margin-top: 2.5rem;
     }
 
     h5 {
       font-family: inherit;
       color: $color-teal;
+      font-size: 1.2rem;
 
-      @include respond-below(md) {
-        font-size: 1.3rem;
+      @include respond-above(md) {
       }
     }
 
@@ -65,23 +68,22 @@
 
   .timeline-content {
     @include respond-below(md) {
-      padding-left: 2rem;
+      padding-left: 1.5rem;
     }
     h5 {
       position: relative;
-      padding-top: 2.5rem;
+      padding-top: 1.5rem;
       color: $color-teal;
-      border-bottom: 0.2rem solid $color-teal;
+      // border-bottom: 0.2rem solid $color-teal;
       display: inline-block;
+      font-size: 1.2rem;
 
-      @include respond-below(md) {
-        padding-top: 2rem;
-        font-size: 1.3rem;
+      @include respond-above(md) {
       }
     }
 
     ul {
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       text-align: justify;
 
       li {
@@ -92,7 +94,7 @@
         .list-icon {
           color: $color-teal;
           min-width: 1rem;
-          padding: 0.3rem 1rem 0.3rem 0;
+          padding: 0.3rem 0.5rem 0.3rem 0;
         }
 
         .list-item-text span {

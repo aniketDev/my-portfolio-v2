@@ -1,11 +1,12 @@
 @import '../../assets/scss/base';
 
 .home {
-  height: calc(100vh - #{$navbar-height});
-  color: $color-foreground;
+  height: 100vh;
+  color: $color-about-text;
 
   @include respond-above(sm) {
     margin-top: $navbar-height;
+    height: calc(100vh - #{$navbar-height});
   }
 
   .art1 {
