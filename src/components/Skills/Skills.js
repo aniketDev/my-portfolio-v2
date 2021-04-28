@@ -41,7 +41,7 @@ const Skills = () => {
                     rel="noreferrer"
                     className="card__actions--button"
                   >
-                    <span>Learn More</span>
+                    <span>{`Learn More`}</span>
                   </Button>
                 </CardActions>
               </Card>

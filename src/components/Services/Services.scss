@@ -7,17 +7,17 @@
 
   &__content {
     .card {
-      @include respond-below(lg) {
-        padding: 10px;
-      }
+      margin: 1.5rem;
 
-      &:hover {
-        .content__button {
-          visibility: visible;
+      @include respond-above(lg) {
+        &:hover {
+          .content__button {
+            visibility: visible;
+          }
         }
       }
 
-      &__link {
+      &__wrapper {
         .icon {
           margin: 0 auto -4rem;
           width: 8rem;
@@ -43,20 +43,21 @@
           display: grid;
           background: rgba(29, 32, 36, 0.9);
           border-radius: 3rem;
-          padding: 5rem 1rem 2rem;
-          margin-left: 1rem;
-          margin-right: 1rem;
+          padding: 5rem 1rem 1rem;
           height: calc(100% - 5rem);
           color: $color-foreground;
           text-align: center;
           transition: background 600ms ease, box-shadow 300ms ease;
 
-          &:hover {
-            // background-image: linear-gradient(to bottom, $color-nav-dark, $color-nav-light);
-            // color: rgba(29, 32, 36, 0.9);
-            box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
-              0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-            background: rgba(8, 66, 83, 0.9);
+          @include respond-above(lg) {
+            padding: 5rem 1rem 2rem;
+            &:hover {
+              // background-image: linear-gradient(to bottom, $color-nav-dark, $color-nav-light);
+              // color: rgba(29, 32, 36, 0.9);
+              box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+              background: rgba(8, 66, 83, 0.9);
+            }
           }
 
           &__title {
@@ -70,17 +71,21 @@
 
           &__text {
             margin-bottom: 1rem;
+            line-height: 1.5rem;
             @include font-size(section-content);
           }
 
           &__button {
             margin: 0.5rem;
-            visibility: hidden;
             color: $color-teal;
             transition: visibility 150ms linear;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include respond-above(lg) {
+              visibility: hidden;
+            }
 
             span {
               @include font-size(section-content);

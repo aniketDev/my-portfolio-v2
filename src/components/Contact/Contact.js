@@ -15,7 +15,7 @@ const Contact = () => {
       </Grid>
 
       <Grid item container xs={12} className="section-content contact__content" justify="center">
-        <Grid item container xs={10} spacing={5}>
+        <Grid item container xs={10} spacing={3}>
           {ContactData.map(data => (
             <Grid item xs={12} md={4} key={data.id}>
               <Card raised={true} className="card">
@@ -31,13 +31,8 @@ const Contact = () => {
           ))}
         </Grid>
 
-        <Grid item container xs={6} className="contact__content__footer" justify="center">
-          <Grid item xs={3}>
-            <Link noWrap target="_blank" rel="noreferrer" underline="none" href="https://github.com/aniketDev/">
-              <FontAwesomeIcon className="icon" icon={['fab', 'github-square']} />
-            </Link>
-          </Grid>
-          <Grid item xs={3}>
+        <Grid item container xs={6} className="contact__content__footer">
+          <Grid item xs={4}>
             <Link
               noWrap
               target="_blank"
@@ -48,7 +43,12 @@ const Contact = () => {
               <FontAwesomeIcon className="icon" icon={['fab', 'linkedin']} />
             </Link>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={4}>
+            <Link noWrap target="_blank" rel="noreferrer" underline="none" href="https://github.com/aniketDev/">
+              <FontAwesomeIcon className="icon" icon={['fab', 'github-square']} />
+            </Link>
+          </Grid>
+          {/* <Grid item xs={3}>
             <Link
               noWrap
               target="_blank"
@@ -58,8 +58,8 @@ const Contact = () => {
             >
               <FontAwesomeIcon className="icon" icon={['fab', 'hackerrank']} />
             </Link>
-          </Grid>
-          <Grid item xs={3}>
+          </Grid> */}
+          <Grid item xs={4}>
             <Link noWrap target="_blank" rel="noreferrer" underline="none" href="https://codepen.io/aniketDev/">
               <FontAwesomeIcon className="icon" icon={['fab', 'codepen']} />
             </Link>

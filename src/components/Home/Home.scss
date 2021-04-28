@@ -57,7 +57,7 @@
   }
 
   .home-text-container {
-    padding: 3rem 1.5rem 0;
+    padding: 2rem 1.5rem 2rem;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -113,12 +113,16 @@
       }
     }
 
-    .home-button {
-      @include font-size(home-button);
-      letter-spacing: 0.1rem;
-      background: $color-teal;
-      color: white;
-      text-transform: capitalize;
+    a {
+      align-self: center;
+      .home-button {
+        @include font-size(home-button);
+        letter-spacing: 0.1rem;
+        background: $color-teal;
+        color: white;
+        text-transform: capitalize;
+        align-self: center;
+      }
     }
   }
 }

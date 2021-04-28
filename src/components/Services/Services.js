@@ -12,43 +12,44 @@ const Services = () => {
       </Grid>
 
       <Grid item container xs={12} justify="center">
-        <Grid item xs={8}>
+        <Grid item xs={10} md={8}>
           <Typography component="p" paragraph={true} align="center">
-            In my 2 years of experience I've learned many technologies and never stopped learning
-            new skills. With that knowledge and experience bellow are the services I can offer for
-            you.
+            In my 2 years of experience I've learned many technologies and never stopped learning new skills. With that
+            knowledge and experience bellow are the services I can offer for you.
           </Typography>
         </Grid>
       </Grid>
 
       <Grid item container xs={12} className="section-content services__content" justify="center">
-        <Grid item container xs={12} lg={10} xl={10} spacing={5}>
+        <Grid item container xs={12} lg={10} xl={10}>
           {ServicesData.map(data => (
             <Grid item xs={12} md={4} key={data.id} className="card">
-              <Link
-                color="textSecondary"
-                underline="none"
-                variant="inherit"
-                href={data.url}
-                className="card__link"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <div className="card__wrapper">
                 <div className="icon">
                   <img alt="" src={data.image} />
                 </div>
-                <div className="content">
-                  <Typography className="content__title" variant="h4" component="h4">
-                    {data.title}
-                  </Typography>
-                  <div className="content__text">{data.description}</div>
-                  <div className="content__button">
-                    <Typography component="span">Read more</Typography>
-                    <ArrowRightAltIcon />
-                    {/* <FontAwesomeIcon icon="long-arrow-alt-right" size="lg" /> */}
+                <Link
+                  color="textSecondary"
+                  underline="none"
+                  variant="inherit"
+                  href={data.url}
+                  className="card__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="content">
+                    <Typography className="content__title" variant="h4" component="h4">
+                      {data.title}
+                    </Typography>
+                    <div className="content__text">{data.description}</div>
+                    <div className="content__button">
+                      <Typography component="span">Read more</Typography>
+                      <ArrowRightAltIcon />
+                      {/* <FontAwesomeIcon icon="long-arrow-alt-right" size="lg" /> */}
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </Grid>
           ))}
         </Grid>

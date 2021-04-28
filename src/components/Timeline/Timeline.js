@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Grid,
-  Typography,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  useMediaQuery
-} from '@material-ui/core';
+import { Grid, Typography, List, ListItem, ListItemIcon, ListItemText, useMediaQuery } from '@material-ui/core';
 import './Timeline.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -43,20 +35,13 @@ const Timeline = ({ data }) => {
               data.contentLists.map(list => (
                 <ListItem disableGutters={true} key={list}>
                   <ListItemIcon className="list-icon">
-                    <FontAwesomeIcon
-                      className="icon"
-                      icon="angle-right"
-                      size="lg"
-                    />
+                    <FontAwesomeIcon className="icon" icon="angle-right" size="lg" />
                   </ListItemIcon>
                   <ListItemText primary={list} className="list-item-text" />
                 </ListItem>
               ))
             ) : (
-              <ListItemText
-                primary={data.contentLists[0]}
-                className="list-item-text"
-              />
+              <ListItemText primary={data.contentLists[0]} className="list-item-text" />
             )}
           </List>
         </Grid>
@@ -69,7 +54,7 @@ const Timeline = ({ data }) => {
         <Grid item xs={1}></Grid>
         <Grid item xs={1} className="timeline-icon">
           <div className="icon-container">
-            <FontAwesomeIcon className="icon" icon={data.icon} size="lg" />
+            <FontAwesomeIcon className="icon" icon={data.icon} size="md" />
           </div>
         </Grid>
         <Grid item container xs={9}>
@@ -95,20 +80,13 @@ const Timeline = ({ data }) => {
                 data.contentLists.map(list => (
                   <ListItem disableGutters={true} key={list}>
                     <ListItemIcon className="list-icon">
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon="angle-right"
-                        size="lg"
-                      />
+                      <FontAwesomeIcon className="icon" icon="angle-right" size="lg" />
                     </ListItemIcon>
                     <ListItemText primary={list} className="list-item-text" />
                   </ListItem>
                 ))
               ) : (
-                <ListItemText
-                  primary={data.contentLists[0]}
-                  className="list-item-text"
-                />
+                <ListItemText primary={data.contentLists[0]} className="list-item-text" />
               )}
             </List>
           </Grid>
