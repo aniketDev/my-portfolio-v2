@@ -3,68 +3,76 @@
 .about {
   &__content {
     &__text {
-      padding: 3rem;
-      @include font-size(about-content);
-      text-align: justify;
+      @include font-size(section-content);
+      padding: 0rem 1.5rem;
+      display: flex;
       flex-direction: column;
       position: relative;
-      z-index: 1;
 
-      @include respond-below(md) {
-        padding: 0rem 2rem;
-        display: flex;
-      }
-
-      &::before {
-        display: inline-block;
-        content: '\201C';
-        clear: both;
-        @include font-size(about-quote-size);
-        position: absolute;
-        left: 0rem;
-        top: -18%;
-        font-weight: 600;
-        font-family: sans-serif;
-        z-index: -1;
-        color: #7a7b7c69;
-
-        @include respond-below(md) {
-          top: -10rem;
-        }
-
-        @include respond-below(sm) {
-          display: none;
-        }
-      }
-
-      &::after {
-        display: inline-block;
-        content: '\201D';
-        clear: both;
-        @include font-size(about-quote-size);
-        position: absolute;
-        right: 0;
-        bottom: -18rem;
-        font-weight: 600;
-        font-family: sans-serif;
-        z-index: -1;
-        color: #7a7b7c69;
-
-        @include respond-below(lg) {
-          bottom: -10rem;
-        }
-
-        @include respond-below(md) {
-          bottom: -13rem;
-        }
-
-        @include respond-below(sm) {
-          display: none;
-        }
-      }
-
-      p {
+      & > p {
         margin-bottom: 1rem;
+        color: $color-about-text;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: -0.01rem;
+        &:nth-child(n + 2) {
+          text-indent: 25px;
+          // text-align: justify;
+        }
+        &:nth-child(4) {
+          font-style: italic;
+        }
+        @include respond-above(lg) {
+          line-height: 1.6rem;
+        }
+        @include respond-above(lg) {
+          line-height: 1.8rem;
+        }
+      }
+
+      @include respond-above(md) {
+        padding: 0 3rem;
+        &::before {
+          content: '';
+          @include font-size(about-quote-size);
+          position: absolute;
+          left: 2rem;
+          top: -10%;
+          font-weight: 400;
+          font-family: sans-serif;
+          // color: #7a7b7c69;
+          height: 5rem;
+          width: 5rem;
+          background-image: url(../../assets/images/big-quote-marks-opening.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          // @include respond-above(lg) {
+          //   font-weight: 400;
+          // }
+        }
+
+        &::after {
+          content: '';
+          @include font-size(about-quote-size);
+          position: absolute;
+          bottom: 15%;
+          right: 2rem;
+          font-weight: 400;
+          font-family: sans-serif;
+          // color: #7a7b7c69;
+          height: 5rem;
+          width: 5rem;
+          background-image: url('../../assets/images/big-quote-marks-closing.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+
+          // @include respond-above(lg) {
+          //   font-weight: 400;
+          // }
+        }
+      }
+
+      @include respond-above(md) {
       }
 
       button.download {
@@ -97,32 +105,29 @@
 
     &__image {
       width: 100%;
-      height: 100%;
 
-      @include respond-below(md) {
-        height: 70vh;
-        position: relative;
-        top: -3rem;
-        display: flex;
-        justify-content: center;
+      padding-bottom: 2rem;
+      // display: flex;
+      // justify-content: center;
+
+      @include respond-above(sm) {
+        // position: relative;
+        // top: -3rem;
       }
 
       .profile-image {
-        background-image: url('../../assets/images/profile-image.webp');
+        background-image: url('../../assets/images/profile-image.png');
         background-color: $color-background;
         background-position: top;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
-        height: 100%;
-        opacity: 1;
+        height: 300px;
+
         // background-blend-mode: soft-light; // luminosity, overlay, difference
         // box-shadow: 20px 0 4rem 4rem $color-background inset;
-        @include respond-below(md) {
-          width: 50%;
-        }
-        @include respond-below(sm) {
-          width: 100%;
+        @include respond-above(lg) {
+          height: 100%;
         }
       }
     }

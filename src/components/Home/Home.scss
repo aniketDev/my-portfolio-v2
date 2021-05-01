@@ -1,89 +1,161 @@
 @import '../../assets/scss/base';
 
 .home {
-  height: calc(100vh - #{$navbar-height});
-  margin-top: $navbar-height;
-  color: $color-foreground;
+  height: 100vh;
+  color: $color-about-text;
+
+  @include respond-above(sm) {
+    margin-top: $navbar-height;
+    height: calc(100vh - #{$navbar-height});
+  }
 
   .art1 {
-    position: absolute;
-    top: 3rem;
-    left: 30%;
-    height: 3.5rem;
+    display: none;
+    @include respond-above(md) {
+      display: block;
+      position: absolute;
+      top: 3rem;
+      left: 30%;
+      height: 3.5rem;
+    }
   }
 
   .artwork {
-    position: absolute;
-    top: calc(#{$navbar-height} + 0%);
-    right: 0;
-    // width: 100%;
-    height: calc(100vh - #{$navbar-height});
-    z-index: -1;
-    background-color: $color-background;
+    display: none;
 
-    @include respond-below(xl) {
-      top: calc(#{$navbar-height} + 10%);
-      width: 50%;
-    }
-
-    @include respond-below(lg) {
-      top: 30%;
+    @include respond-above(lg) {
+      display: block;
+      position: absolute;
+      // top: calc(#{$navbar-height} + 0%);
+      // right: 0;
+      // height: calc(100vh - #{$navbar-height});
+      z-index: -1;
+      background-color: $color-background;
+      bottom: 0;
       right: 0;
       width: 50%;
+      height: auto;
     }
 
-    @include respond-below(md) {
-      top: 60%;
-      right: 0;
-      width: 70%;
-      height: 50%;
-    }
+    // @include respond-below(xl) {
+    //   top: calc(#{$navbar-height} + 10%);
+    //   width: 50%;
+    // }
 
-    @include respond-below(sm) {
-      top: 60%;
-      right: 0;
-      width: 90%;
-      height: 40%;
-    }
+    // @include respond-below(lg) {
+    //   top: 30%;
+    //   right: 0;
+    //   width: 50%;
+    // }
+
+    // @include respond-below(md) {
+    //   top: 60%;
+    //   right: 0;
+    //   width: 70%;
+    //   height: 50%;
+    // }
   }
 
   .home-text-container {
-    padding-left: 5%;
+    padding: 2rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
 
-    h1 {
+    @include respond-above(md) {
+      padding: 2rem 3rem 0;
+      justify-content: center;
+      gap: 3rem;
+    }
+    @include respond-above(lg) {
+      padding: 2rem 3.5rem 0;
+      justify-content: center;
+      // gap: 3rem;
+    }
+
+    .introName {
       @include font-size(home-heading);
-      letter-spacing: 0.3rem;
-      margin-bottom: 1rem;
-      display: inline-flex;
-      flex-flow: column;
+      letter-spacing: 0.1rem;
+
+      @include respond-above(lg) {
+        // font-weight: bold;
+      }
 
       span {
         &:last-child {
-          margin-top: 1rem;
-          text-transform: uppercase;
+          // text-transform: uppercase;
           color: $color-teal;
+          padding: 0 10px;
+        }
+      }
+      .nameWrapper {
+        display: flex;
+        align-items: center;
+        @include respond-above(lg) {
+          font-weight: bold;
+        }
+        &::before {
+          content: '';
+          background-image: url('../../assets/images/code-tag-open.svg');
+          background-repeat: no-repeat;
+          height: 2rem;
+          width: 2rem;
+          display: block;
+          // filter: invert(0.5) sepia(0.5) saturate(5) hue-rotate(308deg);
+          filter: invert(0.3);
+          @include respond-above(lg) {
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+        &::after {
+          content: '';
+          background-image: url('../../assets/images/code-tag-close.svg');
+          background-repeat: no-repeat;
+          height: 3rem;
+          width: 3rem;
+          display: block;
+          filter: invert(0.3);
+          @include respond-above(lg) {
+            height: 5rem;
+            width: 5rem;
+          }
         }
       }
     }
 
     p {
       @include font-size(home-content);
-      letter-spacing: 0.1rem;
-      font-weight: 500;
+      color: white;
 
-      @include respond-below(xl) {
-        color: white;
-        font-weight: 400;
+      @include respond-above(sm) {
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+      }
+      @include respond-above(lg) {
+        width: 65%;
+        line-height: 2rem;
+      }
+      span {
+        font-size: 1.5rem;
+        color: $color-teal;
       }
     }
 
-    .home-button {
-      // font-family: inherit;
-      @include font-size(home-button);
-      letter-spacing: 0.1rem;
-      background: $color-teal;
-      color: white;
-      margin-top: 2rem;
+    a {
+      align-self: center;
+      @include respond-above(md) {
+        align-self: flex-start;
+      }
+      .home-button {
+        @include font-size(home-button);
+        letter-spacing: 0.1rem;
+        background: $color-teal;
+        color: white;
+        text-transform: capitalize;
+        align-self: center;
+      }
     }
   }
 }

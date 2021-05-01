@@ -5,6 +5,11 @@
     .section {
       background: $color-background;
       color: $color-foreground;
+      &.about {
+        .section-heading {
+          // padding: 0 0.5rem 2rem;
+        }
+      }
 
       .section-heading {
         display: flex;
@@ -12,10 +17,15 @@
         justify-content: center;
         text-align: center;
         height: 20%;
-        padding: 3rem 0.5rem;
+        padding: 2rem 0.5rem;
+
+        @include respond-above(sm) {
+          padding: 3rem 0.5rem;
+        }
 
         h1 {
-          color: #00968896;
+          // color: #00968896;
+          color: $color-section-header;
           @include font-size(section-header);
           text-transform: uppercase;
 
@@ -34,16 +44,16 @@
       }
 
       .section-content {
-        padding: 1rem 3rem 3rem 3rem;
+        // padding: 1.5rem 0rem;
         display: flex;
         border-bottom: 0.1rem solid $color-teal;
 
         @include respond-above(sm) {
-          padding: 0.5rem 2rem 2rem 2rem;
+          // padding: 0.5rem 2rem 2rem 2rem;
         }
 
-        @include respond-below(sm) {
-          padding: 2rem 0rem;
+        @include respond-above(md) {
+          // padding: 1rem 3rem 3rem 3rem;
         }
       }
     }

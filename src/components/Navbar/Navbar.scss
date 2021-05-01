@@ -1,47 +1,72 @@
 @import '../../assets/scss/base';
 
-.toolbar-container {
-  background-image: linear-gradient(to left, $color-nav-dark, $color-nav-light);
-  justify-content: space-between;
-  overflow-x: auto;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  @include font-size(navbar);
-  font-weight: 500;
-  position: fixed !important;
-  height: $navbar-height;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  min-height: 3.5rem !important;
-
-  .icon {
-    color: white;
+.NavbarContainer {
+  &.MuiAppBar-colorSecondary {
+    background-color: $color-teal;
   }
 
-  .toolbar-link {
-    flex-shrink: 0;
-    padding: 0 1rem;
-    cursor: pointer;
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  @include respond-above(xs) {
+    display: none;
+  }
 
-    &::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 0.2rem;
-      background: $color-amber;
-      transition: width 350ms ease-out;
-    }
+  @include respond-above(sm) {
+    align-items: center;
+    overflow-x: hidden;
+    letter-spacing: 0.03rem;
+    @include font-size(navbar);
+    font-weight: 500;
 
-    &:hover {
+    .toolbar-link {
+      flex-shrink: 0;
+      padding: 0 0.5rem;
+      cursor: pointer;
+      color: $color-white;
+      // background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0) 100%);
+      // -webkit-text-fill-color: transparent;
+      // -webkit-background-clip: text;
+
       &::after {
-        width: 100%;
-        color: $color-yellow;
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $color-amber;
+        transition: width 350ms ease-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+          color: $color-yellow;
+        }
       }
     }
+  }
+}
+
+.drawerContainer {
+  .MuiDrawer-paper {
+    background-color: $color-background;
+    width: 60vw;
+    .drawerContent {
+      .MuiListItemIcon-root {
+        min-width: 40px;
+        color: $color-foreground;
+      }
+      .MuiListItemText-root {
+        color: $color-foreground;
+      }
+    }
+  }
+}
+
+.NavContainerMobile {
+  .menuButton {
+    position: fixed;
+    border-radius: 5px;
+    margin: 10px 0 0 10px;
+    background-color: teal;
+    color: $color-white;
+    z-index: 10;
   }
 }

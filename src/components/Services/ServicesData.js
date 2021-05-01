@@ -1,7 +1,11 @@
+import serviceImg_1 from '../../assets/images/website-dev.png';
+import serviceImg_2 from '../../assets/images/webapp-dev.png';
+import serviceImg_3 from '../../assets/images/mob-dev.png';
+
 export const ServicesData = [
   {
     id: 1,
-    image: require('../../assets/images/website-dev.png'),
+    image: serviceImg_1,
     url: 'https://en.wikipedia.org/wiki/Web_development',
     title: 'Website Design and Development',
     description:
@@ -9,7 +13,7 @@ export const ServicesData = [
   },
   {
     id: 2,
-    image: require('../../assets/images/webapp-dev.png'),
+    image: serviceImg_2,
     url: 'https://en.wikipedia.org/wiki/Web_application_development',
     title: 'Web Application Design and Development',
     description:
@@ -17,7 +21,7 @@ export const ServicesData = [
   },
   {
     id: 3,
-    image: require('../../assets/images/mob-dev.png'),
+    image: serviceImg_3,
     url: 'https://en.wikipedia.org/wiki/Mobile_app_development',
     title: 'Mobile Application Design and Development',
     description:

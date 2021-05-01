@@ -26,11 +26,11 @@
       font-size: 1rem;
     }
     @if $el == about-content {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
-    @if $el == about-quote-size {
-      font-size: 20rem;
-    }
+    // @if $el == about-quote-size {
+    //   font-size: 20rem;
+    // }
     @if $el == contact-heading {
       font-size: 3rem;
     }
@@ -38,30 +38,30 @@
       font-size: 1.7rem;
     }
     @if $el == home-heading {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
     @if $el == home-content {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
     @if $el == home-button {
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
   }
 
   @include respond-above(sm) {
-    @if $el == section-header {
-      font-size: 3rem;
-      letter-spacing: 1rem;
-    }
-    @if $el == section-content {
-      font-size: 1rem;
-    }
+    // @if $el == section-header {
+    //   font-size: 3rem;
+    //   letter-spacing: 1rem;
+    // }
+    // @if $el == section-content {
+    //   font-size: 1rem;
+    // }
     @if $el == about-content {
       font-size: 1.2rem;
     }
-    @if $el == about-quote-size {
-      font-size: 25rem;
-    }
+    // @if $el == about-quote-size {
+    //   font-size: 25rem;
+    // }
     @if $el == contact-heading {
       font-size: 6rem;
     }
@@ -72,29 +72,29 @@
       font-size: 2.5rem;
     }
     @if $el == home-content {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
     @if $el == home-button {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     @if $el == navbar {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
   @include respond-above(md) {
     @if $el == section-header {
-      font-size: 5rem;
-      letter-spacing: 1.1rem;
+      font-size: 3rem;
+      letter-spacing: 1rem;
     }
-    @if $el == section-content {
-      font-size: 1rem;
-    }
+    // @if $el == section-content {
+    //   font-size: 1rem;
+    // }
     @if $el == about-content {
       font-size: 1.2rem;
     }
     @if $el == about-quote-size {
-      font-size: 25rem;
+      font-size: 20rem;
     }
     @if $el == contact-heading {
       font-size: 7rem;
@@ -102,15 +102,15 @@
     @if $el == contact-subheading {
       font-size: 3rem;
     }
-    @if $el == home-heading {
-      font-size: 2.5rem;
-    }
-    @if $el == home-content {
-      font-size: 1.1rem;
-    }
-    @if $el == home-button {
-      font-size: 1rem;
-    }
+    // @if $el == home-heading {
+    //   font-size: 2.5rem;
+    // }
+    // @if $el == home-content {
+    //   font-size: 1.1rem;
+    // }
+    // @if $el == home-button {
+    //   font-size: 1rem;
+    // }
     @if $el == navbar {
       font-size: 1.2rem;
     }
@@ -118,8 +118,8 @@
 
   @include respond-above(lg) {
     @if $el == section-header {
-      font-size: 6rem;
-      letter-spacing: 1.3rem;
+      font-size: 4rem;
+      letter-spacing: 1.1rem;
     }
     @if $el == section-content {
       font-size: 1.1rem;
@@ -139,12 +139,12 @@
     @if $el == home-heading {
       font-size: 3rem;
     }
-    @if $el == home-content {
-      font-size: 1.3rem;
-    }
-    @if $el == home-button {
-      font-size: 1.1rem;
-    }
+    // @if $el == home-content {
+    //   font-size: 1.3rem;
+    // }
+    // @if $el == home-button {
+    //   font-size: 1.3rem;
+    // }
     @if $el == navbar {
       font-size: 1.2rem;
     }
@@ -152,11 +152,11 @@
 
   @include respond-above(xl) {
     @if $el == section-header {
-      font-size: 8rem;
-      letter-spacing: 1.5rem;
+      font-size: 5rem;
+      letter-spacing: 1.3rem;
     }
     @if $el == section-content {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     @if $el == about-content {
       font-size: 1.6rem;
@@ -177,7 +177,7 @@
       font-size: 1.5rem;
     }
     @if $el == home-button {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
     @if $el == navbar {
       font-size: 1.4rem;
