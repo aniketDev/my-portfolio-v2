@@ -10,7 +10,6 @@
   }
 
   @include respond-above(sm) {
-    display: block;
     align-items: center;
     overflow-x: hidden;
     letter-spacing: 0.03rem;

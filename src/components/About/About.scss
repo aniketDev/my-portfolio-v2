@@ -3,7 +3,7 @@
 .about {
   &__content {
     &__text {
-      @include font-size(about-content);
+      @include font-size(section-content);
       padding: 0rem 1.5rem;
       display: flex;
       flex-direction: column;
@@ -22,51 +22,57 @@
         &:nth-child(4) {
           font-style: italic;
         }
-      }
-
-      @include respond-above(sm) {
-        &::before {
-          display: inline-block;
-          content: '\201C';
-          clear: both;
-          @include font-size(about-quote-size);
-          position: absolute;
-          left: 0rem;
-          top: -10%;
-          font-weight: 600;
-          font-family: sans-serif;
-          z-index: -1;
-          color: #7a7b7c69;
-
-          @include respond-above(md) {
-            top: -18rem;
-          }
+        @include respond-above(lg) {
+          line-height: 1.6rem;
         }
-
-        &::after {
-          display: inline-block;
-          content: '\201D';
-          clear: both;
-          @include font-size(about-quote-size);
-          position: absolute;
-          right: 0;
-          bottom: -10rem;
-          font-weight: 600;
-          font-family: sans-serif;
-          z-index: -1;
-          color: #7a7b7c69;
-
-          @include respond-above(md) {
-            bottom: -13rem;
-          }
-          @include respond-above(lg) {
-            bottom: -18rem;
-          }
+        @include respond-above(lg) {
+          line-height: 1.8rem;
         }
       }
 
       @include respond-above(md) {
-        padding: 3rem;
+        padding: 0 3rem;
+        &::before {
+          content: '';
+          @include font-size(about-quote-size);
+          position: absolute;
+          left: 2rem;
+          top: -10%;
+          font-weight: 400;
+          font-family: sans-serif;
+          // color: #7a7b7c69;
+          height: 5rem;
+          width: 5rem;
+          background-image: url(../../assets/images/big-quote-marks-opening.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          // @include respond-above(lg) {
+          //   font-weight: 400;
+          // }
+        }
+
+        &::after {
+          content: '';
+          @include font-size(about-quote-size);
+          position: absolute;
+          bottom: 15%;
+          right: 2rem;
+          font-weight: 400;
+          font-family: sans-serif;
+          // color: #7a7b7c69;
+          height: 5rem;
+          width: 5rem;
+          background-image: url('../../assets/images/big-quote-marks-closing.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+
+          // @include respond-above(lg) {
+          //   font-weight: 400;
+          // }
+        }
+      }
+
+      @include respond-above(md) {
       }
 
       button.download {
@@ -105,8 +111,8 @@
       // justify-content: center;
 
       @include respond-above(sm) {
-        position: relative;
-        top: -3rem;
+        // position: relative;
+        // top: -3rem;
       }
 
       .profile-image {
@@ -117,11 +123,11 @@
         background-size: contain;
         width: 100%;
         height: 300px;
-        opacity: 1;
 
         // background-blend-mode: soft-light; // luminosity, overlay, difference
         // box-shadow: 20px 0 4rem 4rem $color-background inset;
-        @include respond-above(sm) {
+        @include respond-above(lg) {
+          height: 100%;
         }
       }
     }

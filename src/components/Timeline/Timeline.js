@@ -54,7 +54,7 @@ const Timeline = ({ data }) => {
         <Grid item xs={1}></Grid>
         <Grid item xs={1} className="timeline-icon">
           <div className="icon-container">
-            <FontAwesomeIcon className="icon" icon={data.icon} size="md" />
+            <FontAwesomeIcon className="icon" icon={data.icon} size="1x" />
           </div>
         </Grid>
         <Grid item container xs={9}>

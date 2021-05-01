@@ -5,8 +5,7 @@ import './About.scss';
 const About = () => {
   const years = new Date().getFullYear() - 2018;
   const months = new Date().getMonth() + 1;
-  const xs = useMediaQuery('(max-width: 899px)');
-  const md = useMediaQuery('(min-width: 900px)');
+  const md = useMediaQuery('(min-width: 1280px)');
 
   return (
     <Grid container className="about section" id="about">
@@ -18,11 +17,13 @@ const About = () => {
       </Grid>
 
       <Grid container item xs={12} className="about__content">
-        <Grid item xs={12} lg={4} className="about__content__image">
-          <div className="profile-image"></div>
-        </Grid>
+        {!md ? (
+          <Grid item xs={12} lg={4} className="about__content__image">
+            <div className="profile-image"></div>
+          </Grid>
+        ) : null}
 
-        <Grid item xs={12} md={8} lg={8} className="about__content__text">
+        <Grid item xs={12} lg={8} className="about__content__text">
           <Typography variant="inherit" component="p">
             Hey there!
           </Typography>
@@ -60,7 +61,7 @@ const About = () => {
           </button>
         </Grid>
         {md ? (
-          <Grid item xs={12} md={4} lg={4} className="about__content__image">
+          <Grid item xs={12} lg={4} className="about__content__image">
             <div className="profile-image"></div>
           </Grid>
         ) : null}

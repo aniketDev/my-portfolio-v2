@@ -21,35 +21,32 @@ const Services = () => {
       </Grid>
 
       <Grid item container xs={12} className="section-content services__content" justify="center">
-        <Grid item container xs={12} lg={10} xl={10}>
+        <Grid item container xs={12} xl={10}>
           {ServicesData.map(data => (
             <Grid item xs={12} md={4} key={data.id} className="card">
-              <div className="card__wrapper">
-                <div className="icon">
-                  <img alt="" src={data.image} />
-                </div>
-                <Link
-                  color="textSecondary"
-                  underline="none"
-                  variant="inherit"
-                  href={data.url}
-                  className="card__link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="content">
-                    <Typography className="content__title" variant="h4" component="h4">
-                      {data.title}
-                    </Typography>
-                    <div className="content__text">{data.description}</div>
-                    <div className="content__button">
-                      <Typography component="span">Read more</Typography>
-                      <ArrowRightAltIcon />
-                      {/* <FontAwesomeIcon icon="long-arrow-alt-right" size="lg" /> */}
-                    </div>
-                  </div>
-                </Link>
+              <div className="icon">
+                <img alt="" src={data.image} />
               </div>
+              <Link
+                color="textSecondary"
+                underline="none"
+                variant="inherit"
+                href={data.url}
+                className="card__link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="content">
+                  <Typography className="content__title" variant="h4" component="h4">
+                    {data.title}
+                  </Typography>
+                  <div className="content__text">{data.description}</div>
+                  <div className="content__button">
+                    <Typography component="span">Read more</Typography>
+                    <ArrowRightAltIcon />
+                  </div>
+                </div>
+              </Link>
             </Grid>
           ))}
         </Grid>

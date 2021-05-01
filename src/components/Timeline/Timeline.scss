@@ -50,10 +50,10 @@
       border-radius: 50%;
       position: relative;
       margin-top: 2rem;
+      width: 2rem;
+      height: 2rem;
 
-      @include respond-below(sm) {
-        width: 2rem;
-        height: 2rem;
+      @include respond-above(sm) {
       }
 
       .icon {
@@ -67,8 +67,8 @@
   }
 
   .timeline-content {
-    @include respond-below(md) {
-      padding-left: 1.5rem;
+    padding-left: 1.5rem;
+    @include respond-above(md) {
     }
     h5 {
       position: relative;
