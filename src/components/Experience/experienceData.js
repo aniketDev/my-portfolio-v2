@@ -1,4 +1,4 @@
-const getCurrentDate = date => {
+const getDuration = date => {
   const currentDate = new Date();
   const providedDate = new Date(date);
   const year = currentDate.getFullYear() - providedDate.getFullYear();
@@ -10,7 +10,7 @@ export const experienceData = [
   {
     headerTitle: 'Software Engineer',
     headerSubtitle1: 'March 2020 - Present',
-    headerSubtitle2: getCurrentDate('16-May-2020'),
+    headerSubtitle2: getDuration('16-March-2020'),
     icon: 'briefcase',
     contentTitle: 'Valtech India Systems Pvt. Ltd., Bangalore',
     contentLists: [

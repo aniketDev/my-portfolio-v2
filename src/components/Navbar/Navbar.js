@@ -10,11 +10,13 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Icon
+  Icon,
+  Button
 } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import MenuIcon from '@material-ui/icons/Menu';
 import { isMobile } from '../../utils/deviceInformation';
+import SaveIcon from '@material-ui/icons/Save';
 
 const sections = [
   { title: 'Home', url: '#home', icon: 'home_rounded' },
@@ -35,6 +37,20 @@ const Navbar = () => {
       return;
     }
     setIsOpen(!isOpen);
+  };
+
+  const scrollToTop = e => {
+    console.log(e);
+    e.preventDefault();
+    const element = e.target.innerText.toLowerCase();
+    if (element === 'home') {
+      // document.documentElement.scrollTop = 0;
+      window.scrollTo(0, 0);
+    } else {
+      // document.documentElement.scrollTop = document.querySelector(`#${element}`).offsetTop;
+      const elmnt = document.querySelector(`#${element}`);
+      elmnt.scrollIntoView();
+    }
   };
 
   const renderMenuItems = () => (
@@ -89,12 +105,16 @@ const Navbar = () => {
                   variant="inherit"
                   href={section.url}
                   className="toolbar-link"
+                  onClick={e => scrollToTop(e)}
                 >
                   {section.title}
                 </Link>
               ))}
             </React.Fragment>
           </Toolbar>
+          <Button variant="contained" color="primary" className="downloadBtn" startIcon={<SaveIcon />}>
+            Download CV
+          </Button>
         </AppBar>
       )}
     </React.Fragment>

@@ -10,7 +10,6 @@
 
     @include respond-above(md) {
       text-align: right;
-      margin-top: 2.5rem;
     }
 
     h5 {
@@ -69,6 +68,7 @@
   .timeline-content {
     padding-left: 1.5rem;
     @include respond-above(md) {
+      padding-left: 0;
     }
     h5 {
       position: relative;
@@ -79,6 +79,7 @@
       font-size: 1.2rem;
 
       @include respond-above(md) {
+        padding-top: 2rem;
       }
     }
 

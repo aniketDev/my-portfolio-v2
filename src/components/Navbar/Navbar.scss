@@ -1,12 +1,8 @@
 @import '../../assets/scss/base';
 
-.NavbarContainer {
+.MuiAppBar-root.NavbarContainer {
   &.MuiAppBar-colorSecondary {
     background-color: $color-teal;
-  }
-
-  @include respond-above(xs) {
-    display: none;
   }
 
   @include respond-above(sm) {
@@ -32,6 +28,7 @@
         height: 2px;
         background: $color-amber;
         transition: width 350ms ease-out;
+        backface-visibility: hidden;
       }
 
       &:hover {
@@ -40,6 +37,36 @@
           color: $color-yellow;
         }
       }
+    }
+  }
+  @include respond-above(md) {
+    .toolbar-link {
+      padding: 0 1rem;
+    }
+  }
+  @include respond-above(lg) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    letter-spacing: 0.01rem;
+
+    .toolbar-link {
+      padding: 0 0.5rem;
+    }
+  }
+  .downloadBtn {
+    display: none;
+    @include respond-above(lg) {
+      display: inline-flex;
+      margin: 0 1.5rem;
+      text-transform: capitalize;
+      letter-spacing: 0.1rem;
+      background-color: $color-deep-purple;
+    }
+    @include respond-above(lg) {
+      margin: 0 2rem;
     }
   }
 }
