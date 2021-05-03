@@ -63,7 +63,9 @@
       margin: 0 1.5rem;
       text-transform: capitalize;
       letter-spacing: 0.1rem;
-      background-color: $color-deep-purple;
+      color: $color-teal;
+      background-color: $color-white;
+      font-weight: 600;
     }
     @include respond-above(lg) {
       margin: 0 2rem;

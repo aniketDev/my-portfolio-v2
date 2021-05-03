@@ -17,6 +17,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import MenuIcon from '@material-ui/icons/Menu';
 import { isMobile } from '../../utils/deviceInformation';
 import SaveIcon from '@material-ui/icons/Save';
+import { STRING_CONSTANTS } from '../../utils/stringConstants';
 
 const sections = [
   { title: 'Home', url: '#home', icon: 'home_rounded' },
@@ -112,7 +113,14 @@ const Navbar = () => {
               ))}
             </React.Fragment>
           </Toolbar>
-          <Button variant="contained" color="primary" className="downloadBtn" startIcon={<SaveIcon />}>
+          <Button
+            variant="contained"
+            className="downloadBtn"
+            startIcon={<SaveIcon />}
+            component="a"
+            href={STRING_CONSTANTS.downloadCVUrl}
+            download="Aniket_CV"
+          >
             Download CV
           </Button>
         </AppBar>

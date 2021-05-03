@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Typography, useMediaQuery, Link } from '@material-ui/core';
 import './About.scss';
+import { STRING_CONSTANTS } from '../../utils/stringConstants';
 
 const About = () => {
   const years = new Date().getFullYear() - 2018;
@@ -51,11 +52,7 @@ const About = () => {
           </Typography>
 
           <button className="download">
-            <Link
-              href="https://drive.google.com/file/d/1tvZO82WIk24I-bDuqSs9LAt6cS6trUcR/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link href={STRING_CONSTANTS.downloadCVUrl} rel="noreferrer" download="Aniket_CV">
               Download CV
             </Link>
           </button>
