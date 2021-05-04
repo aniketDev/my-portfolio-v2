@@ -41,7 +41,6 @@ const Navbar = () => {
   };
 
   const scrollToTop = e => {
-    console.log(e);
     e.preventDefault();
     const element = e.target.innerText.toLowerCase();
     if (element === 'home') {
