@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Button, Link } from '@material-ui/core';
 import './Home.scss';
-import artwork from '../../assets/images/artwork.webp';
+import artwork from '../../assets/images/artwork.png';
 import art_1 from '../../assets/images/art_paperplane.png';
 
 const Home = () => {
