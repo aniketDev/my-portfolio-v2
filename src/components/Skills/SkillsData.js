@@ -11,7 +11,7 @@ import bootstrap from '../../assets/images/logo/bs.webp';
 import materialUI from '../../assets/images/logo/material_ui.svg';
 import ts from '../../assets/images/logo/typescript.svg';
 import java from '../../assets/images/logo/java.jpg';
-import spring from '../../assets/images/logo/spring.png';
+// import spring from '../../assets/images/logo/spring.png';
 import maven from '../../assets/images/logo/maven.png';
 import jspservlet from '../../assets/images/logo/jspserv.png';
 import git from '../../assets/images/logo/git.png';
@@ -55,6 +55,12 @@ export const cards = [
     link: 'https://redux.js.org/'
   },
   {
+    title: 'React Native',
+    image: react,
+    value: 60,
+    link: 'https://docs.spring.io/spring/docs/current/spring-framework-reference/'
+  },
+  {
     title: 'Angular',
     image: angular,
     value: 70,
@@ -96,12 +102,12 @@ export const cards = [
     value: 60,
     link: 'https://docs.oracle.com/en/java/index.html'
   },
-  {
-    title: 'Spring',
-    image: spring,
-    value: 60,
-    link: 'https://docs.spring.io/spring/docs/current/spring-framework-reference/'
-  },
+  // {
+  //   title: 'Spring',
+  //   image: spring,
+  //   value: 60,
+  //   link: 'https://docs.spring.io/spring/docs/current/spring-framework-reference/'
+  // },
   {
     title: 'Maven',
     image: maven,
