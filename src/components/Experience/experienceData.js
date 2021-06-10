@@ -42,18 +42,5 @@ export const experienceData = [
       'Researching different software programs and libraries.',
       'Maintaining software documentation.'
     ]
-  },
-  {
-    headerTitle: 'Project Coordinator',
-    headerSubtitle1: 'Aug 2017 - Nov 2017',
-    headerSubtitle2: '4 months',
-    icon: 'briefcase',
-    contentTitle: 'Innova Uniﬁed Management Services Pvt. Ltd., Kolkata',
-    contentLists: [
-      'Manually test any project software or application.',
-      'Manage all the ongoing projects by keeping detailed project notes and records.',
-      'Keeping all the members of the team up-to-date with current information and paperwork.',
-      'Communicating with team members to ensure optimal strategy and maximum eﬃciency.'
-    ]
   }
 ];
