@@ -5,7 +5,7 @@ import { STRING_CONSTANTS } from '../../utils/stringConstants';
 
 const About = () => {
   const years = new Date().getFullYear() - 2018;
-  const months = new Date().getMonth() + 1;
+  const months = new Date().getMonth() - 2;
   const md = useMediaQuery('(min-width: 1280px)');
 
   return (
@@ -35,16 +35,15 @@ const About = () => {
             &nbsp;of professional experience.
           </Typography>
           <Typography variant="inherit" component="p">
-            After M.Tech, I started my job as a Project Coordinator in Kolkata. I came to Bangalore where I started my
-            job as a Junior Software Developer in a startup named <strong>Balihans Software Pvt. Ltd</strong>. I started
-            designing and developing the company's own product, online school management system using
+            After M.Tech, I started my job as a Junior Software Developer in a startup named <strong>Balihans Software Pvt. Ltd
+            </strong>. I started designing and developing the company's own product, online school management system using
             <strong> Java, Spring, HTML, CSS , Bootstrap</strong>. After finishing the project I started working in
             <strong> Primesoft IP Solutions Pvt. Ltd.</strong> as a Software Engineer. There I've worked on a banking
             project and other projects using various tools and technologies like
             <strong> Angular 5, Ionic 3, React js</strong>. I'm currently working in
-            <strong> Valtech India Pvt. Ltd. as a Software Engineer</strong> on <strong>ZEE5 Web PWA</strong> using
-            libraries like
-            <strong> React and Redux</strong> etc.
+            <strong> Valtech India Pvt. Ltd. as a Software Engineer</strong> on <strong>Zee5</strong> project,
+            one of the leading OTT platforms in India, using
+            libraries like<strong> React and Redux</strong> etc.
           </Typography>
           <Typography variant="inherit" component="p">
             I try to learn new things each and every day and I feel a day without learning something new is a day
